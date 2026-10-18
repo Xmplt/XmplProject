@@ -1,0 +1,12 @@
+# Настройка двух застаканных регионов WorldGuard:
+# 1. safe-spawn-region — внутренний мирный регион спавна (ДО красной линии, где ПвП выключено).
+# 2. pvp-outer-region  — внешний большой регион спавна (ЗА красной линией, внутри которого уже можно драться).
+# Важно: так как safe-spawn-region находится внутри pvp-outer-region, плагин автоматически определяет:
+# - Если игрок внутри safe-spawn-region -> это МИРНЫЙ СПАВН (SAFE_SPAWN).
+# - Если игрок внутри pvp-outer-region, но НЕ в safe-spawn-region -> это БОЕВАЯ ЗОНА ЗА ЛИНИЕЙ (PVP_RING).
+# - Если игрок вышел за пределы обоих регионов -> это УЛИЦА/ДИКИЙ МИР (WILDERNESS), где метка сразу снимается!
+
+worldguard-regions:
+  world-name: "world"
+  safe-spawn-region: "spawn"
+  pvp-outer-region: "spawn_pvp"

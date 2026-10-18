@@ -1,0 +1,5 @@
+name: NexusClans
+main: me.xmpl.nexusclans.NexusClansExtension
+version: 1.0.0
+authors: [Xmpl]
+depend: [Vault, ProtocolLib, WorldEdit]

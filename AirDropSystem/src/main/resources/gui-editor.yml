@@ -1,0 +1,52 @@
+storage-gui:
+  title: "&8Лут АирДропа (Стр. {page})"
+  prev-page-slot: 45
+  prev-page-name: "&e← Предыдущая страница"
+  info-slot: 49
+  info-name: "&a&lУправление лутом"
+  info-lore:
+    - "&7Положите любые предметы в свободные слоты."
+    - "&eНажмите ПКМ по предмету&7, чтобы"
+    - "&7настроить его точный шанс выпадения!"
+  next-page-slot: 53
+  next-page-name: "&eСледующая страница →"
+
+  item-lore-preview:
+    - ""
+    - "&6Шанс выпадения: &e{chance}%"
+    - "&7(Нажмите ПКМ для настройки шанса)"
+
+# Меню настройки шанса (открывается при ПКМ по предмету в редакторе)
+# Сделано компактной полоской с цветными стеклами по бокам от центрального предмета: -25, -10, -1 [Предмет] +1, +10, +25
+chance-gui:
+  title: "&8Настройка шанса предмета"
+  center-item-slot: 4
+  buttons:
+    minus-25:
+      slot: 0
+      glass-data: 14 # Красное стекло
+      name: "&c&l-25%"
+    minus-10:
+      slot: 1
+      glass-data: 14
+      name: "&c&l-10%"
+    minus-1:
+      slot: 2
+      glass-data: 1
+      name: "&6&l-1%"
+    back-save:
+      slot: 3
+      material: "ARROW"
+      name: "&e← Вернуться к списку лута"
+    plus-1:
+      slot: 5
+      glass-data: 4
+      name: "&e&l+1%"
+    plus-10:
+      slot: 6
+      glass-data: 5 # Лаймовое стекло
+      name: "&a&l+10%"
+    plus-25:
+      slot: 7
+      glass-data: 5
+      name: "&a&l+25%"

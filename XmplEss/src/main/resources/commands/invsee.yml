@@ -1,0 +1,44 @@
+permissions:
+  view: "xmpless.invsee.view"             # Право смотреть инвентарь онлайн-игрока
+  edit: "xmpless.invsee.edit"             # Право админа забирать/менять/добавлять предметы
+  offline: "xmpless.invsee.offline"       # Право админа смотреть и редактировать инвентарь ОФФЛАЙН игрока
+
+settings:
+  gui-title: "&8Инвентарь: &0{player}"
+  slots:
+    health: 44
+    boots: 45
+    leggings: 46
+    chestplate: 47
+    helmet: 48
+    offhand: 49
+    potion: 52
+    pvp-status: 53
+
+items:
+  filler-glass:
+    name: "&7"
+    color-id: 15 # Черная стеклянная панель для пустых тех. слотов (50, 51)
+  no-effects:
+    name: "&bЭффекты зелий"
+    lore:
+      - "&7На игроке сейчас нет активных эффектов."
+  has-effects:
+    name: "&bАктивные эффекты"
+    effect-line-format: "&f- &e{effect} &7({time})"
+  pvp-status:
+    safe:
+      name: "&a✔ Игрок не в PvP"
+      color-id: 5 # Лаймовый бетон
+    unsafe:
+      name: "&c⚔ Игрок в режиме PvP"
+      color-id: 14 # Красный бетон
+  health:
+    name: "&cЗдоровье"
+    format: "&7Текущее: &f{health} &7из &f{max} &c❤"
+
+messages:
+  no-permission: "&cУ вас нет прав!"
+  no-offline-permission: "&cИгрок не в сети! У вас нет прав на просмотр оффлайн-инвентарей."
+  player-not-found: "&cДанные об инвентаре игрока &e{player} &cне найдены!"
+  usage: "&cИспользование: &e/invsee <Игрок>"

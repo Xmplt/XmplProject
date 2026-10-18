@@ -1,0 +1,78 @@
+general:
+  cooldown-seconds: 5
+  cooldown-message: "&cПодождите еще {time} сек. перед следующим звуком!"
+  no-permission-message: "&cУ вас нет прав на этот звуковой эффект!"
+
+  # Общий шаблон ярко-желтых сообщений:
+  # {action_self} — что сделал отправитель, {count} — сколько игроков в радиусе услышали
+  # {action_target} — что услышали игроки в радиусе, {player} — ник отправителя
+  sender-format: "&eВы {action_self}, и это услышало {count} игроков!"
+  listener-format: "&eВам {action_target} игрок {player}!"
+
+# Список всех звуковых команд (можешь менять или добавлять свои!)
+commands:
+  skyli:
+    aliases: ["whine"]
+    require-permission: false
+    permission: "funeffects.sound.skyli"
+    radius: 16.0
+    sound: "ENTITY_WOLF_WHINE"
+    volume: 1.5
+    pitch: 1.1
+    action-self: "заскулили"
+    action-target: "поскулил"
+
+  hurk:
+    aliases: ["oink"]
+    require-permission: false
+    permission: "funeffects.sound.hurk"
+    radius: 16.0
+    sound: "ENTITY_PIG_AMBIENT"
+    volume: 1.5
+    pitch: 0.9
+    action-self: "хрюкнули"
+    action-target: "хрюкнул"
+
+  bark:
+    aliases: ["woof"]
+    require-permission: false
+    permission: "funeffects.sound.bark"
+    radius: 18.0
+    sound: "ENTITY_WOLF_AMBIENT"
+    volume: 1.6
+    pitch: 0.95
+    action-self: "гавкнули"
+    action-target: "гавкнул"
+
+  meow:
+    aliases: ["nyan"]
+    require-permission: false
+    permission: "funeffects.sound.meow"
+    radius: 16.0
+    sound: "ENTITY_CAT_AMBIENT"
+    volume: 1.5
+    pitch: 1.1
+    action-self: "мяукнули"
+    action-target: "мяукнул"
+
+  roar:
+    aliases: ["growl"]
+    require-permission: false
+    permission: "funeffects.sound.roar"
+    radius: 20.0
+    sound: "ENTITY_POLAR_BEAR_WARNING"
+    volume: 1.6
+    pitch: 0.85
+    action-self: "зарычали"
+    action-target: "прорычал"
+
+  hiss:
+    aliases: ["shhh"]
+    require-permission: false
+    permission: "funeffects.sound.hiss"
+    radius: 15.0
+    sound: "ENTITY_CAT_HISS"
+    volume: 1.5
+    pitch: 1.0
+    action-self: "зашипели"
+    action-target: "зашипел"

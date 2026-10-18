@@ -1,0 +1,11 @@
+databases:
+  default:
+    # Режимы: SQLITE (по умолчанию в папке Configs/MineSystem/), MYSQL или GLOBAL
+    type: "SQLITE"
+    sqlite-file: "mine_backpack.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_mine"
+      username: "root"
+      password: "password"

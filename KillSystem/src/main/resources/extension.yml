@@ -1,0 +1,4 @@
+name: KillSystem
+main: me.xmpl.killsystem.KillSystemExtension
+version: 1.0.0
+authors: [Xmpl]

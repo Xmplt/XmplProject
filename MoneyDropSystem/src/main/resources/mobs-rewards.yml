@@ -1,0 +1,221 @@
+# Настройки наград за убийство мобов (сбалансированные небольшие суммы)
+# min - минимальная сумма, max - максимальная сумма, display-name - имя в винительном падеже ("Вы убили ...")
+
+# Если моба нет в списке ниже, но он не в черном списке — используется default
+default-mob:
+  enabled: false
+  min: 5
+  max: 15
+  display-name: "Существо"
+
+mobs:
+  # --- ВРАЖДЕБНЫЕ МОБЫ ---
+  ZOMBIE:
+    enabled: true
+    min: 30
+    max: 55
+    display-name: "Зомби"
+  ZOMBIE_VILLAGER:
+    enabled: true
+    min: 30
+    max: 55
+    display-name: "Зомби-жителя"
+  HUSK:
+    enabled: true
+    min: 35
+    max: 60
+    display-name: "Кадавра"
+  SKELETON:
+    enabled: true
+    min: 30
+    max: 55
+    display-name: "Скелета"
+  STRAY:
+    enabled: true
+    min: 35
+    max: 60
+    display-name: "Зимогора"
+  WITHER_SKELETON:
+    enabled: true
+    min: 45
+    max: 80
+    display-name: "Визер-скелета"
+  CREEPER:
+    enabled: true
+    min: 35
+    max: 65
+    display-name: "Крипера"
+  SPIDER:
+    enabled: true
+    min: 25
+    max: 45
+    display-name: "Паука"
+  CAVE_SPIDER:
+    enabled: true
+    min: 30
+    max: 50
+    display-name: "Пещерного паука"
+  ENDERMAN:
+    enabled: true
+    min: 40
+    max: 75
+    display-name: "Эндермена"
+  WITCH:
+    enabled: true
+    min: 45
+    max: 80
+    display-name: "Ведьму"
+  BLAZE:
+    enabled: true
+    min: 40
+    max: 70
+    display-name: "Ифрита"
+  GHAST:
+    enabled: true
+    min: 50
+    max: 90
+    display-name: "Гаста"
+  SLIME:
+    enabled: true
+    min: 15
+    max: 30
+    display-name: "Слизня"
+  MAGMA_CUBE:
+    enabled: true
+    min: 20
+    max: 35
+    display-name: "Лавового куба"
+  PIG_ZOMBIE:
+    enabled: true
+    min: 30
+    max: 55
+    display-name: "Зомби-свиночеловека"
+  SILVERFISH:
+    enabled: true
+    min: 10
+    max: 20
+    display-name: "Чешуйницу"
+  ENDERMITE:
+    enabled: true
+    min: 10
+    max: 20
+    display-name: "Эндермита"
+  GUARDIAN:
+    enabled: true
+    min: 45
+    max: 75
+    display-name: "Стража"
+  ELDER_GUARDIAN:
+    enabled: true
+    min: 120
+    max: 200
+    display-name: "Древнего стража"
+  SHULKER:
+    enabled: true
+    min: 45
+    max: 80
+    display-name: "Шалкера"
+  VINDICATOR:
+    enabled: true
+    min: 50
+    max: 85
+    display-name: "Поборника"
+  EVOKER:
+    enabled: true
+    min: 80
+    max: 140
+    display-name: "Вызывателя"
+  VEX:
+    enabled: true
+    min: 20
+    max: 40
+    display-name: "Досаждателя"
+
+  # --- МИРНЫЕ И НЕЙТРАЛЬНЫЕ ЖИВОТНЫЕ ---
+  COW:
+    enabled: true
+    min: 10
+    max: 25
+    display-name: "Корову"
+  MUSHROOM_COW:
+    enabled: true
+    min: 15
+    max: 30
+    display-name: "Грибную корову"
+  PIG:
+    enabled: true
+    min: 10
+    max: 25
+    display-name: "Свинью"
+  SHEEP:
+    enabled: true
+    min: 10
+    max: 25
+    display-name: "Овцу"
+  CHICKEN:
+    enabled: true
+    min: 5
+    max: 15
+    display-name: "Курицу"
+  RABBIT:
+    enabled: true
+    min: 8
+    max: 18
+    display-name: "Кролика"
+  SQUID:
+    enabled: true
+    min: 8
+    max: 20
+    display-name: "Спрута"
+  WOLF:
+    enabled: true
+    min: 15
+    max: 30
+    display-name: "Волка"
+  POLAR_BEAR:
+    enabled: true
+    min: 25
+    max: 50
+    display-name: "Белого медведя"
+  HORSE:
+    enabled: true
+    min: 12
+    max: 25
+    display-name: "Лошадь"
+  DONKEY:
+    enabled: true
+    min: 12
+    max: 25
+    display-name: "Осла"
+  LLAMA:
+    enabled: true
+    min: 12
+    max: 25
+    display-name: "Ламу"
+  PARROT:
+    enabled: true
+    min: 5
+    max: 12
+    display-name: "Попугая"
+  OCELOT:
+    enabled: true
+    min: 8
+    max: 18
+    display-name: "Оцелота"
+  BAT:
+    enabled: true
+    min: 5
+    max: 10
+    display-name: "Летучую мышь"
+
+  # --- БОССЫ ---
+  ENDER_DRAGON:
+    enabled: true
+    min: 300
+    max: 500
+    display-name: "Дракона Края"
+  WITHER:
+    enabled: true
+    min: 250
+    max: 450
+    display-name: "Иссушителя"

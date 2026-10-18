@@ -1,0 +1,38 @@
+permissions:
+  tempmute: "xmpless.mute.temp"    # Право на обычный временный /mute (блокируется через /takecmd)
+  permmute: "xmpless.mute.perm"    # Право на вечный /pmute (выдается админом отдельно)
+  unmute: "xmpless.unmute"         # Право на /unmute
+  takecmd: "xmpless.takecmd"       # Право для админов забирать/возвращать право мута (/takecmd)
+  nbc: "xmpless.nbc"               # Право на яркое объявление /nbc
+
+default-pmute-reason: "Нарушение правил чата"
+default-takecmd-reason: "Злоупотребление правами на мут"
+
+messages:
+  no-permission: "&cУ вас нет прав на эту команду!"
+  mute-right-taken-error: "&cУ вас было навсегда отобрано право выдавать муты!"
+  usage-mute: "&cИспользование: &e/mute <Игрок> <Время: 1d 2h 30m> <Причина>"
+  usage-pmute: "&cИспользование: &e/pmute <Игрок> [Причина]"
+  usage-unmute: "&cИспользование: &e/unmute <Игрок>"
+  usage-takecmd: "&cИспользование: &e/takecmd <Игрок> [Причина]"
+  usage-nbc: "&cИспользование: &e/nbc <Текст объявления>"
+
+  # Общий чат и личное уведомление при муте
+  broadcast-tempmute: "&6[Мут] &fИгрока &e{target} &fзамутил &c{admin} &fна &e{time} &fпо причине: &f{reason}"
+  broadcast-permmute: "&4[Мут] &fИгрока &e{target} &fзамутил &4НАВСЕГДА &c{admin} &fпо причине: &f{reason}"
+  target-muted-notify: "&c[!] Вас замутил &e{admin}&c! Причина: &f{reason} &7(Срок: {time})"
+  target-unmuted-notify: "&a[!] С вас был снят мут администратором &e{admin}&a!"
+  unmute-success: "&aВы размутили игрока &e{target}&a."
+
+  # Сообщение при попытке писать в чат или /nbc с мутом
+  chat-blocked-temp: "&cВы замучены! Кем: &e{admin}&c, Причина: &f{reason}&c. Осталось: &e{time}"
+  chat-blocked-perm: "&cВы замучены &4НАВСЕГДА&c! Кем: &e{admin}&c, Причина: &f{reason}"
+
+  # Команда /nbc (жирный ярко-желтый шрифт + подпись в конце)
+  nbc-format: "&e&l{message} &7(написал: &f{player}&7)"
+
+  # Команда /takecmd (переключатель)
+  takecmd-taken-sender: "&cВы отобрали право на мут у игрока &e{target}&c. Причина: &f{reason}"
+  takecmd-taken-target: "&c&l[!] &cУ вас навсегда было отобрано право на мут администратором &e{admin}&c! Причина: &f{reason}"
+  takecmd-restored-sender: "&aВы вернули право на временный мут игроку &e{target}&a!"
+  takecmd-restored-target: "&a&l[!] &aАдминистратор &e{admin} &aвернул вам право на обычный мут!"

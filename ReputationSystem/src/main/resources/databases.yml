@@ -1,0 +1,33 @@
+databases:
+  # 1. База данных итоговых балансов репутации игроков
+  reputation:
+    type: "SQLITE" # Варианты: SQLITE, MYSQL, GLOBAL
+    sqlite-file: "reputation.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_rep_scores"
+      username: "root"
+      password: "password"
+
+  # 2. Отдельная база данных связей (кто кому поставил LIKE или DISLIKE, чтобы не ставили повторно и могли менять оценку)
+  votes:
+    type: "SQLITE"
+    sqlite-file: "votes.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_rep_votes"
+      username: "root"
+      password: "password"
+
+  # 3. Отдельная база данных кулдаунов (сохраняет 10-минутный кулдаун даже после рестарта сервера!)
+  cooldowns:
+    type: "SQLITE"
+    sqlite-file: "cooldowns.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_rep_cooldowns"
+      username: "root"
+      password: "password"

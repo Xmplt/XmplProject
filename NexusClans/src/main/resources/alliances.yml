@@ -1,0 +1,9 @@
+settings:
+  # Максимальное количество союзных кланов у одного клана
+  max-allies-per-clan: 2
+  # Время на принятие запроса союза (/c team) в секундах
+  request-expire-seconds: 60
+  # Значения настроек союза по умолчанию
+  default-team-pvp: false
+  default-team-sit: false
+  default-team-tp: false

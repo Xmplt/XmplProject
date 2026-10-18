@@ -1,0 +1,30 @@
+spawner-protection:
+  # Запретить выдачу денег за мобов из спавнеров и яиц призыва
+  block-spawner-mobs: true
+
+  # Причины спавна (SpawnReason), при которых моб помечается и за него НЕ даются деньги:
+  # SPAWNER - рассадник монстров (спавнер)
+  # SPAWNER_EGG - яйцо призыва
+  # SLIME_SPLIT - разделение большого слайма/лавового куба (чтобы не фармили бесконечно мелких)
+  blocked-spawn-reasons:
+    - "SPAWNER"
+    - "SPAWNER_EGG"
+    - "SLIME_SPLIT"
+
+# Сущности, за разрушение или убийство которых НИКОГДА не даются деньги
+blacklisted-entities:
+  - "VILLAGER"
+  - "ARMOR_STAND"
+  - "ITEM_FRAME"
+  - "PAINTING"
+  - "LEASH_HITCH"
+  - "ENDER_CRYSTAL"
+  - "MINECART"
+  - "MINECART_CHEST"
+  - "MINECART_FURNACE"
+  - "MINECART_HOPPER"
+  - "MINECART_MOB_SPAWNER"
+  - "MINECART_TNT"
+  - "BOAT"
+  - "SNOWMAN"
+  - "IRON_GOLEM"

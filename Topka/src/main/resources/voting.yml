@@ -1,0 +1,35 @@
+settings:
+  enabled: true
+  # Количество голосов за конкретную территорию для её автоматической смены
+  votes-required-to-change: 5
+  # Сколько случайных территорий из пула показывать в меню голосования (в воронке 5 слотов)
+  random-options-count: 5
+  # Тип меню: HOPPER (воронка, 5 слотов) или ROW_9 (полоска сундука, 9 слотов)
+  inventory-type: "HOPPER"
+  gui-title: "&8Голосование за территорию"
+  allow-revote: false
+
+hologram:
+  enabled: true
+  height-offset: 1.25
+  lines:
+    - "&a&lГолосуй за территорию"
+    - "&7(Нажми на изумрудный блок)"
+
+default-terrain-template:
+  icon-material: "GRASS"
+  icon-data: 0
+  lore:
+    - "&7Нажмите, чтобы проголосовать"
+    - "&7за установку этой территории!"
+    - ""
+    - "&fГолосов: &a{votes}&7/&e{required}"
+    - "&fОсталось до смены: &e{remaining}"
+
+messages:
+  # Только личные сообщения голосующему (без глобального спама в чат)
+  voted-personal: "&aВы проголосовали за территорию &f{terra}&a! Осталось голосов до смены: &e{remaining}"
+  already-voted-this: "&cВы уже проголосовали за территорию &f{terra}&c в этом голосовании!"
+  vote-changed-personal: "&eВы изменили свой голос на территорию &f{terra}&e! Осталось голосов до смены: &6{remaining}"
+  terrain-changed-personal: "&aВаш голос стал решающим! Территория изменена на &f{terra}&a."
+  no-terrains-configured: "&cСейчас нет доступных территорий для голосования!"

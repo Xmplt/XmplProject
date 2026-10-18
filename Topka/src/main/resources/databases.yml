@@ -1,0 +1,10 @@
+databases:
+  default:
+    type: "SQLITE" # Варианты: SQLITE, MYSQL, GLOBAL
+    sqlite-file: "topka_state.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_topka"
+      username: "root"
+      password: "password"

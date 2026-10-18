@@ -1,0 +1,13 @@
+no-permission: "&c[AntiRelog] У вас нет прав администратора!"
+reload-success: "&a[AntiRelog] Все конфигурационные файлы AntiRelog успешно перезагружены!"
+status-message: "&e[AntiRelog] Статус игрока &6%player%&e: %status% &7(Осталось: %time% сек., Противник: %opponent%)"
+tag-forced: "&a[AntiRelog] Игроку &e%player% &aпринудительно выдан режим ПвП!"
+untag-forced: "&a[AntiRelog] С игрока &e%player% &aпринудительно снят режим ПвП!"
+player-not-found: "&c[AntiRelog] Игрок не найден в сети!"
+
+help:
+  - "&4&l=== Управление AntiRelog ==="
+  - "&c/antirelog status [Игрок] &7- Проверить статус ПвП режима"
+  - "&c/antirelog tag <Игрок> &7- Выдать игроку ПвП режим (тест)"
+  - "&c/antirelog untag <Игрок> &7- Снять с игрока ПвП режим"
+  - "&c/antirelog reload &7- Перезагрузить все конфиги дополнения"

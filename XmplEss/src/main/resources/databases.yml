@@ -1,0 +1,44 @@
+databases:
+  # Отдельная база для Банов
+  bans:
+    type: "SQLITE" # Варианты: SQLITE, MYSQL, GLOBAL
+    sqlite-file: "bans.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_bans"
+      username: "root"
+      password: "password"
+
+  # Отдельная база для Мутов и /takecmd
+  mutes:
+    type: "SQLITE"
+    sqlite-file: "mutes.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_mutes"
+      username: "root"
+      password: "password"
+
+  # Отдельная база для Ваниша и Режима Бога
+  vanish:
+    type: "SQLITE"
+    sqlite-file: "vanish.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_vanish"
+      username: "root"
+      password: "password"
+
+  # Отдельная база для Seen и оффлайн-уведомлений (разбан, оффлайн-мут, возврат/изъятие кмд)
+  userdata:
+    type: "SQLITE"
+    sqlite-file: "userdata.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_userdata"
+      username: "root"
+      password: "password"

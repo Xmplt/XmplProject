@@ -1,0 +1,9 @@
+messages:
+  no-permission: "&c[MoneyDrop] У вас нет прав администратора!"
+  reload-success: "&a[MoneyDrop] Все конфиги наград за мобов и ПвП успешно перезагружены!"
+  stats-format: "&6[MoneyDrop] Игрок &e{player}&6: Заработано на мобах: &a{mob_earned}$ &8| &6Украдено в ПвП: &2{pvp_stolen}$ &8| &6Потеряно в ПвП: &c{pvp_lost}$"
+
+  help:
+    - "&2&l=== Управление MoneyDropSystem ==="
+    - "&a/moneydrop stats [Игрок] &7- Посмотреть статистику заработка"
+    - "&a/moneydrop reload &7- Перезагрузить все конфиги"

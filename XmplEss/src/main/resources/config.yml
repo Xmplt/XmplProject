@@ -1,0 +1,18 @@
+# Перехватывать ли стандартные команды Essentials (/ban, /tempban, /mute, /kick, /vanish, /seen, /invsee, /near, /rtp)
+intercept-essentials-commands: true
+
+placeholders:
+  ban:
+    no: "&a&lНет"
+    yes-temp: "&c&lДа"
+    yes-perm: "&c&lНавсегда"
+    # Добавляется после Да/Навсегда ТОЛЬКО если причина кастомная (не автоматическая дефолтная)
+    custom-reason-suffix: " &7({reason})"
+  mute:
+    no: "&a&lНет"
+    yes-temp: "&c&lДа"
+    yes-perm: "&c&lНавсегда"
+    custom-reason-suffix: " &7({reason})"
+  cmd:
+    yes: "&a&lДа"
+    no: "&c&lНет"

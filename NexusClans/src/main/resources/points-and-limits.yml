@@ -1,0 +1,43 @@
+money-points:
+  # За каждые вложенные 10 000$ (даже по частям: 5000 + 3000 + 2000) начисляется +1 очко клана
+  deposit-step-money: 10000.0
+  points-per-deposit-step: 1
+  # За каждые снятые главой 10 000$ через /c take (даже по частям: 5000 + 5000) у главы отнимается -1 очко
+  withdraw-step-money: 10000.0
+  points-per-withdraw-step: 1
+
+pvp-unique-points:
+  # +1 очко убийце (1 раз за конкретную пару Убийца -> Жертва из другого клана)
+  killer-points-gain: 1
+  # -1 очко жертве (1 раз от каждого уникального убийцы из другого клана)
+  victim-points-loss: 1
+
+events-smart-points:
+  # Начисление очков первому игроку (если он в клане), взявшему предмет/активировавшему ивент.
+  # Если первым взял игрок БЕЗ клана — очки в этом раунде никому не начисляются!
+  # Очки масштабируются от min-points до max-points в зависимости от текущего онлайна (full-online-threshold).
+  full-online-threshold: 40
+  nexuschest:
+    enabled: true
+    min-points: 50
+    max-points: 75
+  airdrop:
+    enabled: true
+    min-points: 50
+    max-points: 75
+  topka:
+    enabled: true
+    min-points: 50
+    max-points: 75
+
+jobs-daily-points:
+  # Шахта: каждые 20 выкопанных руд = +1 очко в клан (общий лимит на весь клан: 100 очков в сутки)
+  mine:
+    enabled: true
+    ores-per-point: 20
+    clan-daily-max-points: 100
+  # Лесопилка: каждые 15 срубленных деревьев = +1 очко в клан (общий лимит на весь клан: 100 очков в сутки)
+  wood:
+    enabled: true
+    trees-per-point: 15
+    clan-daily-max-points: 100

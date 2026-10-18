@@ -1,0 +1,4 @@
+name: XmplShield
+main: me.xmpl.shield.XmplShieldExtension
+version: 1.0.0
+authors: [Xmpl]

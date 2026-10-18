@@ -1,0 +1,4 @@
+name: EnderRub
+main: me.xmpl.enderrub.EnderRubExtension
+version: 1.0.0
+authors: [Xmpl]

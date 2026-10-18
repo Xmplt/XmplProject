@@ -1,0 +1,22 @@
+permissions:
+  # Право администратора на перезагрузку конфигов (/rep reload)
+  admin: "reputationsystem.admin"
+  # Право обхода 10-минутного кулдауна (только если включено ниже)
+  enable-cooldown-bypass: false
+  bypass-cooldown: "reputationsystem.bypass.cooldown"
+
+  # Требовать ли пермишены для обычных игроков на /like, /dislike и /rep (по умолчанию false — доступно всем)
+  require-vote-permission: false
+  vote: "reputationsystem.vote"
+  require-view-permission: false
+  view: "reputationsystem.view"
+
+settings:
+  # Общий кулдаун на голосование (/like и /dislike) в секундах (600 секунд = 10 минут)
+  vote-cooldown-seconds: 600
+
+  # Разрешить ли игрокам оценивать тех, кто сейчас оффлайн, но уже играл на сервере ранее
+  allow-offline-target-voting: true
+
+  # Уведомлять ли игрока при входе на сервер, если ему поставили лайк/дизлайк, пока он был оффлайн
+  notify-on-join-if-voted-offline: true

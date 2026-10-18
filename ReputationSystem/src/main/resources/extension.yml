@@ -1,0 +1,4 @@
+name: ReputationSystem
+main: me.xmpl.reputation.ReputationSystemExtension
+version: 1.0.0
+authors: [Xmpl]

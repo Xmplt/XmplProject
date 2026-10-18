@@ -1,0 +1,152 @@
+mechanics:
+  # Сколько раз подряд можно плюнуть БЕЗ кулдауна
+  burst-shots-before-cooldown: 4
+  # Время восстановления горла после 4 плевков подряд (в секундах)
+  cooldown-seconds: 15
+
+  # Радиус слышимости звука плевка для окружающих игроков
+  sound-radius: 15.0
+
+  # Настройка полета снаряда ламы:
+  initial-speed: 1.35           # Начальная скорость полета вперед
+  straight-flight-ticks: 7      # Сколько тиков летит идеально прямо
+  gravity-drop-per-tick: 0.045  # С какой скоростью начинает снижаться вниз после прямого участка
+  max-flight-ticks: 60          # Максимальное время жизни снаряда в воздухе
+
+  # Сколько тиков частицы плевка остаются лежать и искрить на земле после падения (60 тиков = 3 сек)
+  ground-effect-ticks: 60
+
+  # Минимальный урон при попадании плевком в игрока (0.5 = четверть сердца)
+  hit-damage: 0.5
+
+gui:
+  title: "&8Выбор эффекта плевка"
+  size: 27
+  # Кнопки пагинации (появляются АВТОМАТИЧЕСКИ только если в списке ниже есть плевки со страницей page: 2 и более!)
+  prev-page-slot: 18
+  prev-page-name: "&e← Предыдущая страница"
+  next-page-slot: 26
+  next-page-name: "&eСледующая страница →"
+
+  status-lore:
+    selected: "&a✔ Выбрано"
+    unlocked: "&eНажмите, чтобы выбрать!"
+    locked: "&c✖ Заблокировано (Выбивается из кейсов)"
+
+messages:
+  cooldown: "&cУ вас пересохло в горле, подождите немного! ({time} сек.)"
+  spit-launch: "&eВы плюнули перед собой!"
+  spit-hit-shooter: "&eВы попали плевком в игрока {target}!"
+  spit-hit-victim: "&eВ вас плюнул игрок {shooter}!"
+  style-selected: "&eВы выбрали стиль плевка: {style}&e!"
+  style-locked: "&cЭтот эффект плевка у вас еще не открыт!"
+
+# Каталог плевков (можно добавлять сколько угодно и раскидывать по страницам page: 1, 2, 3...)
+# В списке particles можно указывать сразу несколько видов частиц через запятую!
+styles:
+  DEFAULT:
+    page: 1
+    slot: 10
+    default-unlocked: true
+    permission: ""
+    icon: "GHAST_TEAR"
+    display-name: "&fОбычный плевок"
+    description:
+      - "&7Классический слюнявый плевок."
+      - "&7Доступен каждому игроку."
+    sound: "ENTITY_LLAMA_SPIT"
+    pitch: 1.0
+    particles:
+      - "CLOUD"
+      - "WATER_SPLASH"
+
+  DRAGON:
+    page: 1
+    slot: 11
+    default-unlocked: false
+    permission: "funeffects.spit.dragon"
+    icon: "DRAGONS_BREATH"
+    display-name: "&5Драконий плевок"
+    description:
+      - "&7Плевок чистой магией Края."
+      - "&7Оставляет фиолетовое пламя на земле."
+    sound: "ENTITY_ENDERDRAGON_GROWL"
+    pitch: 1.6
+    particles:
+      - "DRAGON_BREATH"
+      - "PORTAL"
+
+  MUSICAL:
+    page: 1
+    slot: 12
+    default-unlocked: false
+    permission: "funeffects.spit.musical"
+    icon: "NOTE_BLOCK"
+    display-name: "&dМузыкальный плевок"
+    description:
+      - "&7Мелодичный плевок нотами и сердечками."
+    sound: "BLOCK_NOTE_HARP"
+    pitch: 1.4
+    particles:
+      - "NOTE"
+      - "HEART"
+
+  FIRE:
+    page: 1
+    slot: 13
+    default-unlocked: false
+    permission: "funeffects.spit.fire"
+    icon: "BLAZE_POWDER"
+    display-name: "&6Огненный плевок"
+    description:
+      - "&7Обжигающий сгусток лавы и огня."
+    sound: "ENTITY_BLAZE_SHOOT"
+    pitch: 1.2
+    particles:
+      - "FLAME"
+      - "LAVA"
+
+  ICE:
+    page: 1
+    slot: 14
+    default-unlocked: false
+    permission: "funeffects.spit.ice"
+    icon: "PACKED_ICE"
+    display-name: "&bЛедяной плевок"
+    description:
+      - "&7Морозный плевок со снежинками."
+    sound: "BLOCK_GLASS_BREAK"
+    pitch: 1.5
+    particles:
+      - "SNOW_SHOVEL"
+      - "FIREWORKS_SPARK"
+
+  TOXIC:
+    page: 1
+    slot: 15
+    default-unlocked: false
+    permission: "funeffects.spit.toxic"
+    icon: "SLIME_BALL"
+    display-name: "&aКислотный плевок"
+    description:
+      - "&7Ядовитая зеленая слизь и пузыри."
+    sound: "ENTITY_SLIME_SQUISH"
+    pitch: 0.8
+    particles:
+      - "SLIME"
+      - "VILLAGER_HAPPY"
+
+  BLOOD:
+    page: 1
+    slot: 16
+    default-unlocked: false
+    permission: "funeffects.spit.blood"
+    icon: "REDSTONE"
+    display-name: "&cВампирский плевок"
+    description:
+      - "&7Багровые искры и темный дым."
+    sound: "ENTITY_WITHER_SHOOT"
+    pitch: 1.7
+    particles:
+      - "REDSTONE"
+      - "SMOKE_NORMAL"

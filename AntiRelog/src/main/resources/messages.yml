@@ -1,0 +1,10 @@
+pvp-entered-chat: "&c[AntiRelog] &fВы вошли в режим ПвП с игроком &e%opponent% &fна &c%time% сек.&f!"
+pvp-expired-chat: "&a[AntiRelog] &fРежим ПвП окончен. Вы снова в безопасности."
+command-blocked: "&c[AntiRelog] &fКоманда &e/%command% &fзаблокирована во время ПвП! Осталось: &c%time% сек."
+quit-in-pvp-broadcast: "&4[AntiRelog] &fИгрок &c%player% &fиспугался боя с &e%opponent% &fи вышел с сервера (Наказан)!"
+
+# Настройки выводимых значений для PlaceholderAPI (%xmpl_antirelog_...%)
+placeholders:
+  in-pvp-true: "&cВ бою"
+  in-pvp-false: "&aБезопасно"
+  no-opponent: "Нет"

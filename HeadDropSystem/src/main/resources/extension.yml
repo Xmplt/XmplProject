@@ -1,0 +1,4 @@
+name: HeadDropSystem
+main: me.xmpl.headdrop.HeadDropExtension
+version: 1.0.0
+authors: [Xmpl]

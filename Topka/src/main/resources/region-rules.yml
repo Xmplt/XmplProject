@@ -1,0 +1,21 @@
+region:
+  # Впиши сюда название региона WorldGuard для PvP-зоны Топки:
+  worldguard-region: "topka"
+  world-name: "world"
+
+entry-notification:
+  enabled: true
+  cooldown-seconds: 15
+  message: "&cВы вошли в PvP зону! Команды заблокированы."
+
+command-restrictions:
+  enabled: true
+  bypass-for-admins: false
+  blocked-message: "&cВы не можете использовать команды на PvP &cарене. Если вы застряли, то напишите - &c/killme"
+  allowcmds:
+    - /l
+    - /login
+    - /reg
+    - /register
+    - /killme
+    - /leave

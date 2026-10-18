@@ -1,0 +1,22 @@
+databases:
+  # База данных для хранения текущих балансов игроков
+  balances:
+    type: "SQLITE" # Варианты: SQLITE, MYSQL, GLOBAL
+    sqlite-file: "balances.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_enderrub_balances"
+      username: "root"
+      password: "password"
+
+  # Отдельная база данных для хранения многостраничной истории операций
+  history:
+    type: "SQLITE"
+    sqlite-file: "history.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_enderrub_history"
+      username: "root"
+      password: "password"

@@ -1,0 +1,14 @@
+# Сохранять ли статистику сломанных/пробитых щитов в БД (для плейсхолдеров и топов)
+enable-stats-database: true
+
+databases:
+  default:
+    # Режимы: SQLITE, MYSQL, GLOBAL
+    type: "SQLITE"
+    sqlite-file: "shield_stats.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_shield"
+      username: "root"
+      password: "password"

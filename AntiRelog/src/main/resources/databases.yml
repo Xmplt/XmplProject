@@ -1,0 +1,14 @@
+# Включить ли сохранение статистики выходов из боя в базу данных (если не нужно — поставь false)
+enable-database-logging: false
+
+databases:
+  default:
+    # Режимы: SQLITE (локальный файл в папке Configs/AntiRelog/database.db), MYSQL или GLOBAL
+    type: "SQLITE"
+    sqlite-file: "antirelog_data.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_antirelog"
+      username: "root"
+      password: "password"

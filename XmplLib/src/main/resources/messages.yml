@@ -1,0 +1,12 @@
+prefix: "&6[XmplLib] &r"
+no-permission: "&cУ вас недостаточно прав для использования этой команды!"
+
+# Это сообщение пишется игроку, если он пытается ввести любую команду отключенного дополнения
+extension-disabled-command: "&c[!] Модуль &e%extension% &cв данный момент отключен администратором! Команда &7/%command% &cнедоступна."
+
+extension-not-found: "&cДополнение &e%extension% &cне найдено!"
+extension-already-enabled: "&cДополнение &e%extension% &cуже включено!"
+extension-already-disabled: "&cДополнение &e%extension% &cуже отключено!"
+extension-enabled-success: "&aДополнение &e%extension% &aбыло успешно включено!"
+extension-disabled-success: "&eДополнение &6%extension% &eбыло отключено! Все его команды теперь заблокированы."
+reload-success: "&aКонфигурации и дополнения XmplLib успешно перезагружены! Активно: &e%count%"

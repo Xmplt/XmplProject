@@ -1,0 +1,38 @@
+# Настройки каждой руды в шахте:
+# price - цена за 1 штуку при продаже (/mine sell)
+# max-limit - сколько максимум можно накопать до продажи
+# display-name - название для сообщений
+
+ores:
+  COAL:
+    display-name: "&8Уголь"
+    price: 15.0
+    max-limit: 120
+  IRON:
+    display-name: "&fЖелезо"
+    price: 30.0
+    max-limit: 90
+  GOLD:
+    display-name: "&6Золото"
+    price: 45.0
+    max-limit: 75
+  REDSTONE:
+    display-name: "&cРедстоун"
+    price: 25.0
+    max-limit: 70
+  LAPIS:
+    display-name: "&9Лазурит"
+    price: 35.0
+    max-limit: 80
+  QUARTZ:
+    display-name: "&fКварц"
+    price: 40.0
+    max-limit: 85
+  DIAMOND:
+    display-name: "&bАлмазы"
+    price: 90.0
+    max-limit: 50
+  EMERALD:
+    display-name: "&aИзумруды"
+    price: 120.0
+    max-limit: 40

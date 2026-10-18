@@ -1,0 +1,21 @@
+aliases:
+  - "adrop"
+  - "airchest"
+
+messages:
+  no-permission: "&c[AirDrop] У вас нет прав администратора!"
+  loot-saved: "&a[AirDrop] Изменения страницы лута успешно сохранены!"
+  force-spawned: "&a[AirDrop] Вы принудительно запустили спавн Сундука по координатам!"
+  force-despawned: "&e[AirDrop] Текущий сундук принудительно удален, таймер сброшен!"
+  teleported-to-chest: "&a[AirDrop] Вы телепортировались к активному сундуку!"
+  no-active-chest: "&c[AirDrop] Сейчас в мире нет активного сундука!"
+  reload-success: "&a[AirDrop] Все конфигурации AirDropSystem успешно перезагружены!"
+
+  help:
+    - "&2&l=== Панель Администратора AirDropSystem (/airdrop) ==="
+    - "&a/airdrop loot [Страница] &7- Открыть многостраничный редактор лута и шансов"
+    - "&a/airdrop start &7- Принудительно заспавнить сундук сейчас"
+    - "&a/airdrop stop &7- Принудительно удалить активный сундук"
+    - "&a/airdrop tp &7- Телепортироваться к активному сундуку"
+    - "&a/airdrop status &7- Подробный статус таймера, мира, фазы и запретов"
+    - "&a/airdrop reload &7- Перезагрузить все конфиги"

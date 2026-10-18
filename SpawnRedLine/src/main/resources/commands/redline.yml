@@ -1,0 +1,11 @@
+messages:
+  no-permission: "&c[RedLine] У вас нет прав администратора!"
+  reload-success: "&a[RedLine] Все конфигурации SpawnRedLine успешно перезагружены!"
+  status-format: "&6[RedLine] Игрок &e{player}&6: Зона: &f{zone} &8| &6Метка активна: &f{marked} &8| &6Осталось: &e{time} сек."
+  cleared-player: "&a[RedLine] Метка красной линии принудительно снята с игрока &e{player}&a!"
+
+  help:
+    - "&c&l=== Управление SpawnRedLine ==="
+    - "&e/redline status [Игрок] &7- Проверить текущую зону и статус метки игрока"
+    - "&e/redline clear <Игрок> &7- Снять метку уязвимости с игрока"
+    - "&e/redline reload &7- Перезагрузить все конфиги"

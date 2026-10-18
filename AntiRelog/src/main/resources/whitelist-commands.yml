@@ -1,0 +1,11 @@
+# Если true — в ПвП блокируются все команды, кроме тех, что в списке allowed-commands
+block-commands-in-pvp: true
+
+# Белый список разрешенных команд во время ПвП (указывать без слеша или со слешем — поймет оба варианта)
+allowed-commands:
+  - "msg"
+  - "tell"
+  - "r"
+  - "reply"
+  - "helpop"
+  - "report"

@@ -1,0 +1,17 @@
+name: XmplLib
+main: me.xmpl.lib.XmplLib
+version: 1.0.0
+author: Xmpl
+description: Core library and extension manager for Xmpl plugins
+softdepend:
+  - WorldEdit
+  - WorldGuard
+  - ProtocolLib
+  - HolographicDisplays
+  - Vault
+  - PlaceholderAPI
+commands:
+  xmpllib:
+    description: Manage XmplLib and loaded extensions
+    aliases: [xlib]
+    permission: xmpllib.admin

@@ -1,0 +1,29 @@
+permission: "xmpless.seen"
+no-permission: "&cУ вас нет прав!"
+usage: "&cИспользование: &e/seen <Игрок>"
+player-never-played: "&cИгрок &e{player} &cни разу не заходил на сервер!"
+
+status-online: "&aВ сети (Онлайн: &f{time}&a)"
+status-offline: "&cНе в сети (Был: &f{time} назад&c)"
+
+status-no: "&a&lНет"
+status-cmd-yes: "&a&lДа"
+
+# Форматы, когда статус активен
+banned-temp-info: "&c&lДа &8[&7Кем: &f{admin}&7, Причина: &f{reason}&7, Осталось: &e{time}&8]"
+banned-perm-info: "&c&lНавсегда &8[&7Кем: &f{admin}&7, Причина: &f{reason}&8]"
+
+muted-temp-info: "&c&lДа &8[&7Кем: &f{admin}&7, Причина: &f{reason}&7, Осталось: &e{time}&8]"
+muted-perm-info: "&c&lНавсегда &8[&7Кем: &f{admin}&7, Причина: &f{reason}&8]"
+
+# Если право на мут отобрано через /takecmd
+cmd-taken-info: "&c&lНет &8[&7Отобрал: &f{admin}&7, Причина: &f{reason}&8]"
+
+format:
+  - "&8&m----------------------------------------"
+  - "&6Информация об игроке: &e&l{player}"
+  - "&7Статус: {online_status}"
+  - "&7Забанен ли: {ban_status}"
+  - "&7Замучен ли: {mute_status}"
+  - "&7Есть ли Cmd: {cmd_status}"
+  - "&8&m----------------------------------------"

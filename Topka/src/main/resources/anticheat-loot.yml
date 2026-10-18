@@ -1,0 +1,13 @@
+loot-generation:
+  randomize-slots: true
+
+smart-cooldown:
+  # Минимальный интервал между взятием предметов (650 мс)
+  min-interval-between-takes-ms: 650
+  # Наказание красной шерстью при ошибке: 30 тиков = 1.5 секунды!
+  red-wool-penalty-ticks: 30
+  penalty-item:
+    name: "&cПодождите немного..."
+    lore:
+      - "&7Не берите предметы так быстро!"
+      - "&7Кулдаун: &c1.5 сек."

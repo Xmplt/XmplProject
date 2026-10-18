@@ -1,0 +1,34 @@
+permissions:
+  give: "enderrub.admin.give"       # Право на выдачу: /enderrub give <Ник> <Сумма>
+  take: "enderrub.admin.take"       # Право на снятие: /enderrub take <Ник> <Сумма>
+  set: "enderrub.admin.set"         # Право на установку: /enderrub set <Ник> <Сумма>
+  inspect: "enderrub.admin.inspect" # Право смотреть чужой баланс и историю: /enderrub history <Ник> [Страница]
+  reload: "enderrub.admin.reload"   # Право на перезагрузку конфигов: /enderrub reload
+
+default-reasons:
+  admin-give: "Выдача администратором"
+  admin-take: "Изъятие администратором"
+  admin-set: "Установка баланса администратором"
+
+messages:
+  no-permission: "&c[EnderRub] У вас нет прав администратора для этого действия!"
+  only-integers: "&c[EnderRub] Сумма должна быть строго целым положительным числом (без дробей и точек)!"
+  not-enough-to-take: "&c[EnderRub] У игрока &e{player} &cвсего &e{balance} &cЭндер-Рублей!"
+
+  give-success-admin: "&a[EnderRub] Вы начислили &d&l{amount} ₪ &aигроку &e{player}&a! (Новый баланс: &f{new_balance}&a)"
+  give-notify-target: "&d&l[✦] &fНа ваш счет зачислено &d&l+{amount} Эндер-Рублей&f! Текущий баланс: &e{new_balance} ₪"
+
+  take-success-admin: "&e[EnderRub] Вы списали &c&l{amount} ₪ &eу игрока &6{player}&e! (Новый баланс: &f{new_balance}&e)"
+  take-notify-target: "&c&l[✦] &fС вашего счета списано &c&l-{amount} Эндер-Рублей&f. Текущий баланс: &e{new_balance} ₪"
+
+  set-success-admin: "&a[EnderRub] Вы установили баланс игрока &e{player} &aна &d&l{amount} ₪&a!"
+  reload-success: "&a[EnderRub] Все конфигурации Эндер-Рублей успешно перезагружены!"
+
+  help:
+    - "&5&l=== Управление Донат-Валютой (EnderRub) ==="
+    - "&d/endrub [Страница] &7- Посмотреть свой баланс и историю"
+    - "&d/enderrub give <Ник> <ЦелоеЧисло> [Причина] &7- Выдать Эндер-Рубли"
+    - "&d/enderrub take <Ник> <ЦелоеЧисло> [Причина] &7- Забрать Эндер-Рубли"
+    - "&d/enderrub set <Ник> <ЦелоеЧисло> [Причина] &7- Установить баланс"
+    - "&d/enderrub history <Ник> [Страница] &7- Посмотреть историю игрока"
+    - "&d/enderrub reload &7- Перезагрузить все конфиги"

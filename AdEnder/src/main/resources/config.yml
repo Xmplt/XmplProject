@@ -1,0 +1,14 @@
+permissions:
+  # Право администратора на установку точек (/adender setad, /adender setender, /adender reload)
+  admin: "adender.admin"
+  # Право для админов телепортироваться из любого места и бесплатно (опционально)
+  bypass-region: "adender.bypass.region"
+  bypass-cost: "adender.bypass.cost"
+
+restrictions:
+  # Требовать ли нахождение строго в обычном мире (NORMAL / Overworld). Если игрок в Аду или Энде — выдаст ошибку!
+  only-in-overworld: true
+
+  # Требовать ли нахождение строго в регионе спавна WorldGuard
+  require-spawn-region: true
+  allowed-spawn-region: "spawn1"

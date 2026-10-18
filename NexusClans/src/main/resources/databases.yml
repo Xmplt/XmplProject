@@ -1,0 +1,55 @@
+databases:
+  # 1. Основная БД кланов, участников, казны, сетхоума, кулдаунов и настроек
+  clans_main:
+    type: "SQLITE"
+    sqlite-file: "clans_main.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_clans_main"
+      username: "root"
+      password: "password"
+
+  # 2. БД уникальных киллов между кланами, накопителей по 10 000$ и дневных лимитов шахты/дерева
+  clans_points:
+    type: "SQLITE"
+    sqlite-file: "clans_points.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_clans_points"
+      username: "root"
+      password: "password"
+
+  # 3. БД глобальных и персональных логов клана (/c log)
+  clans_logs:
+    type: "SQLITE"
+    sqlite-file: "clans_logs.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_clans_logs"
+      username: "root"
+      password: "password"
+
+  # 4. БД союзных кланов и настроек союзов (/c team)
+  clans_alliances:
+    type: "SQLITE"
+    sqlite-file: "clans_alliances.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_clans_alliances"
+      username: "root"
+      password: "password"
+
+  # 5. БД виртуальных двойных сундуков кланов (/c chest)
+  clans_chests:
+    type: "SQLITE"
+    sqlite-file: "clans_chests.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_clans_chests"
+      username: "root"
+      password: "password"

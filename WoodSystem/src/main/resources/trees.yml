@@ -1,0 +1,23 @@
+# Настройки пород деревьев:
+# price - сколько денег дается за 1 срубленное дерево этой породы при продаже (/wood sell)
+# display-name - название породы
+
+trees:
+  OAK:
+    display-name: "&6Дуб"
+    price: 35.0
+  BIRCH:
+    display-name: "&fБереза"
+    price: 40.0
+  SPRUCE:
+    display-name: "&2Ель"
+    price: 40.0
+  JUNGLE:
+    display-name: "&aТропическое дерево"
+    price: 50.0
+  ACACIA:
+    display-name: "&cАкация"
+    price: 45.0
+  DARK_OAK:
+    display-name: "&8Темный дуб"
+    price: 55.0

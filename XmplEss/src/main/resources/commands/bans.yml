@@ -1,0 +1,48 @@
+permissions:
+  tempban: "xmpless.ban.temp"      # Только для высших модераторов (/ban ник время причина)
+  permban: "xmpless.ban.perm"      # Вечный бан (/pban ник [причина])
+  unban: "xmpless.unban"           # Разбан (/unban ник [причина])
+  kick: "xmpless.kick"             # Кик (/kick ник [причина])
+  exempt: "xmpless.ban.exempt"     # Защита от бана/кика
+
+# Автоматическая заготовленная причина для /pban, если модератор не указал свою
+default-pban-reason: "Нарушение правил сервера"
+default-kick-reason: "Кикнут администратором"
+
+messages:
+  no-permission: "&cУ вас нет прав на использование этой команды!"
+  usage-ban: "&cИспользование: &e/ban <Игрок> <Время: 1y 2mo 3d 4h 5m 6s> <Причина>"
+  usage-pban: "&cИспользование: &e/pban <Игрок> [Причина]"
+  usage-unban: "&cИспользование: &e/unban <Игрок> [Причина разбана]"
+  usage-kick: "&cИспользование: &e/kick <Игрок> [Причина]"
+  reason-required: "&cДля временного бана вы обязаны указать причину!"
+  cannot-punish: "&cВы не можете наказать этого игрока!"
+  not-banned: "&cИгрок &e{player} &cне находится в бане!"
+
+  broadcast-tempban: "&c[Блокировки] &fИгрок &e{target} &fзабанен модератором &c{admin} &fна &e{time}&f. Причина: &f{reason}"
+  broadcast-pban: "&4[Блокировки] &fИгрок &e{target} &fзабанен &4НАВСЕГДА &fадминистратором &c{admin}&f. Причина: &f{reason}"
+  broadcast-unban: "&a[Блокировки] &fИгрок &e{target} &fбыл разбанен администратором &a{admin}&f."
+  broadcast-kick: "&e[Кик] &fИгрок &e{target} &fбыл кикнут &c{admin}&f. Причина: &f{reason}"
+
+  # Сообщения игроку при заходе ПОСЛЕ окончания бана или после разбана
+  join-expired-ban: "&a&l[!] &aВы были автоматически разбанены, так как время вашего бана истекло!"
+  join-unbanned-no-reason: "&a&l[!] &aВы были разбанены администратором &e{admin}&a!"
+  join-unbanned-with-reason: "&a&l[!] &aВы были разбанены администратором &e{admin}&a! Причина разбана: &f{reason}"
+
+screens:
+  tempban-kick:
+    - "&c&lВЫ БЫЛИ ЗАБАНЕНЫ НА СЕРВЕРЕ"
+    - ""
+    - "&7Кто выдал наказание: &e{admin}"
+    - "&7Причина: &f{reason}"
+    - "&7Осталось времени: &6{time}"
+  permban-kick:
+    - "&4&lВЫ ЗАБАНЕНЫ НАВСЕГДА"
+    - ""
+    - "&7Кто выдал наказание: &e{admin}"
+    - "&7Причина: &f{reason}"
+  kick-screen:
+    - "&e&lВЫ БЫЛИ КИКНУТЫ С СЕРВЕРА"
+    - ""
+    - "&7Кто выдал: &e{admin}"
+    - "&7Причина: &f{reason}"

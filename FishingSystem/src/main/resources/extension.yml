@@ -1,0 +1,5 @@
+name: FishingSystem
+main: me.xmpl.fishing.FishingSystemExtension
+version: 1.0.0
+authors: [Xmpl]
+depend: [WorldEdit, Vault]

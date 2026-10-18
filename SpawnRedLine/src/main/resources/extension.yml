@@ -1,0 +1,5 @@
+name: SpawnRedLine
+main: me.xmpl.redline.SpawnRedLineExtension
+version: 1.0.0
+authors: [Xmpl]
+depend: [WorldGuard]

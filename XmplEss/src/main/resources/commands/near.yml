@@ -1,0 +1,20 @@
+permissions:
+  use: "xmpless.near.use"
+  immunity: "xmpless.near.exempt" # Иммунитет для админов, чтобы их нельзя было найти через /near
+  range-prefix: "xmpless.near.range."
+
+settings:
+  default-radius: 100
+  glow-duration: 10
+  # Можно добавлять сколько угодно привилегий (выбирается самый большой радиус)
+  ranges:
+    vip: 200
+    premium: 300
+    admin: 500
+    god: 1000
+
+messages:
+  no-permission: "&cУ вас нет прав на использование команды /near!"
+  header: "&6&lИгроки рядом (Радиус: {radius}):"
+  format: "&e{player} &7- &f{distance}м"
+  none-found: "&cРядом никого нет."

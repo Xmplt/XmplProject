@@ -1,0 +1,19 @@
+permissions:
+  hold-and-self: "xmpless.stickhelper"
+  give-others: "xmpless.stickhelper.admin"
+
+item:
+  name: "&6Палка хелпера: &e{target}"
+  knockback-level: 5
+  lore:
+    - "&7Инструмент для проверки"
+    - "&7Выдан: &f{issuer}"
+
+messages:
+  no-permission: "&cУ вас нет прав на получение Палки Хелпера!"
+  target-no-permission: "&cЭтому игроку нельзя выдать палку: у него нет права хелпера (&e{perm}&c)!"
+  received-self: "&aВы получили Палку Хелпера!"
+  given-to-helper: "&aВы выдали Палку Хелпера игроку &e{target}&a!"
+  illegal-removed: "&cПалка Хелпера исчезла, так как она принадлежит только персоналу!"
+  # Сообщение жертве при каждом ударе палкой хелпера (желтый нежирный текст + жирный желтый ник)
+  victim-check-notify: "&eВас проверяет хелпер: &e&l{helper}&e!"

@@ -1,0 +1,12 @@
+enable-stats-database: true
+
+databases:
+  default:
+    type: "SQLITE" # Варианты: SQLITE, MYSQL, GLOBAL
+    sqlite-file: "fishing_stats.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_fishing"
+      username: "root"
+      password: "password"

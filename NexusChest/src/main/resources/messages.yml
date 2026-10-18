@@ -1,0 +1,24 @@
+event-broadcasts:
+  started: "&a&lИвент NexusChest начался! &eПропишите: &6/nexuschest {code}"
+  running-info: "&eИвент идет! Вход: &6/nexuschest {code}"
+  ended: "&c&lИвент NexusChest окончен! &7Все участники возвращены на спавн."
+
+teleport-and-access:
+  event-not-running: "&cСейчас ивент NexusChest не проводится! До начала: &e{time}"
+  wrong-code: "&cНеверный код доступа! Актуальный код пишется в чате."
+  teleported-to-event: "&aВы телепортировались на ивент &a&lNexusChest&a! Удачи в паркуре!"
+  illegal-entry-kicked: "&cВы попали в зону NexusChest без ввода кода и были телепортированы на спавн!"
+
+combat-and-death:
+  # Если игрока на арене убил другой игрок
+  death-by-player: "&cВы умерли на NexusChest от руки игрока &e{killer}&c! Чтобы вернуться на арену, пропишите: &6/nexuschest {code}"
+  # Если игрок погиб сам (упал на паркуре, разбился и т.д.)
+  death-generic: "&cВы умерли на NexusChest! Чтобы вернуться на арену, пропишите: &6/nexuschest {code}"
+
+commands-restriction:
+  command-blocked-self: "&cНа арене NexusChest эта команда запрещена! Используйте &e/spawn &cили &e/home&c."
+  tp-target-on-nexus: "&cИгрок &e{target} &cсейчас находится на ивенте NexusChest! Телепортация к нему невозможна."
+
+loot-restriction:
+  cannot-put-items: "&cВ сундуки NexusChest нельзя складывать предметы — только забирать!"
+  wait-cooldown-chat: "&cПодождите пожалуйста, не берите предметы так быстро!"

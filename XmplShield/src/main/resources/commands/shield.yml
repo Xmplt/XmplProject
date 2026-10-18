@@ -1,0 +1,13 @@
+permission: "xmplshield.admin"
+
+messages:
+  no-permission: "&c[XmplShield] У вас нет прав администратора!"
+  reload-success: "&a[XmplShield] Все конфиги звука и механики щитов успешно перезагружены!"
+  test-sound-played: "&e[XmplShield] Тестовый звук пробития щита воспроизведен для всех игроков в радиусе &6{radius} блоков&e!"
+  stats-format: "&6[XmplShield] Статистика &e{player}&6: Пробил чужих щитов: &a{broken_others} &8| &6Потерял своих: &c{lost_own}"
+
+  help:
+    - "&6&l=== Управление XmplShield ==="
+    - "&e/xmplshield test &7- Проверить звук и эффект пробития щита вокруг себя"
+    - "&e/xmplshield stats [Игрок] &7- Посмотреть статистику пробитых щитов"
+    - "&e/xmplshield reload &7- Перезагрузить все конфиги"

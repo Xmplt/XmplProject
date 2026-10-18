@@ -1,0 +1,24 @@
+permissions:
+  # Право администратора на управление регионами (/fishingsystem addregion, /fishingsystem removeregion, reload)
+  admin: "fishingsystem.admin"
+  # Если false — команда /sellfish доступна абсолютно всем обычным игрокам без прав
+  require-sell-permission: false
+  sell: "fishingsystem.sell"
+
+settings:
+  # Во сколько раз дороже стоит рыба, выловленная в специальных формальных регионах (/fishingsystem addregion)
+  bonus-region-multiplier: 2.0
+
+  # Очищать ли наш лор и NBT-теги веса при пережарке рыбы в печке (чтобы жареную рыбу нельзя было продать в /sellfish)
+  strip-tags-on-smelt: true
+
+  # Запретить ли класть рыбу с весом в наковальню
+  prevent-anvil-rename: true
+
+# Формат описания (Lore) пойманной рыбы:
+# Белый нежирный текст "Вес: ", а затем жирный цветной вес ({weight_color}{weight} кг)
+item-display:
+  lore:
+    - "&fВес: {weight_color}{weight} кг"
+  # Дополнительная строчка в лоре, если рыба была поймана в бонусном регионе x2 (можно оставить пустой "")
+  bonus-region-lore-line: "&6✦ Поймана в элитном месте (Цена x2)"

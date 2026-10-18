@@ -1,0 +1,5 @@
+name: AdEnder
+main: me.xmpl.adender.AdEnderExtension
+version: 1.0.0
+authors: [Xmpl]
+depend: [WorldGuard, Vault]

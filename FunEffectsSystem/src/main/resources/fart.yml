@@ -1,0 +1,30 @@
+permission: "funeffects.fart"
+require-permission: false
+
+mechanics:
+  # За один раз можно пукнуть 2 раза подряд, затем кулдаун 18 секунд
+  burst-shots-before-cooldown: 2
+  cooldown-seconds: 18
+
+  # Скорость и время полета снаряда шалкера до взрыва
+  bullet-speed: 0.95
+  max-flight-ticks: 35
+
+  # Радиус задевания игроков при взрыве снаряда и минимальный урон
+  blast-radius: 2.8
+  hit-damage: 0.5
+
+  # Звук и частицы пердежа (слышат все в радиусе 15 блоков)
+  sound-radius: 15.0
+  sound: "ENTITY_SLIME_SQUISH"
+  pitch: 0.5
+  explosion-particles:
+    - "SMOKE_LARGE"
+    - "SLIME"
+    - "SPELL_MOB"
+
+messages:
+  cooldown: "&cПодождите еще {time} сек. перед следующим пуком!"
+  fart-used: "&eВы пукнули!"
+  fart-hit-shooter: "&eВы попали в игрока {target} пердежом!"
+  fart-hit-victim: "&eВ вас попали пуком от игрока {shooter}!"

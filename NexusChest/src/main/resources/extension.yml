@@ -1,0 +1,5 @@
+name: NexusChest
+main: me.xmpl.nexuschest.NexusChestExtension
+version: 1.0.0
+authors: [Xmpl]
+depend: [WorldEdit, WorldGuard]

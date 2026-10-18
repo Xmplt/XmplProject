@@ -1,0 +1,15 @@
+enter-pvp:
+  enabled: true
+  title: "&c&l⚔ РЕЖИМ ПВП ⚔"
+  subtitle: "&f&lВы в бою с &e&l%opponent%&f&l! Не выходите!"
+  fade-in: 0
+  stay: 50
+  fade-out: 5
+
+leave-pvp:
+  enabled: true
+  title: "&a&l✔ БОЙ ОКОНЧЕН"
+  subtitle: "&f&lВы вышли из режима ПвП."
+  fade-in: 0
+  stay: 40
+  fade-out: 5

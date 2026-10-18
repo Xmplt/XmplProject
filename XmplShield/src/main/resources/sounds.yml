@@ -1,0 +1,22 @@
+# Звук при пробитии блока щита топором (когда щит уходит в кд)
+shield-disable-sound:
+  enabled: true
+  # Стандартный звук 1.12.2: ITEM_SHIELD_BREAK
+  sound: "ITEM_SHIELD_BREAK"
+  # Громкость и тональность для всех игроков в радиусе
+  volume: 1.5
+  pitch: 0.9
+
+  # Дополнительный акцентирующий звук (например, легкий звон наковальни или крита), чтобы в шумном замесе было слышно на 100%
+  extra-layer:
+    enabled: true
+    sound: "ENTITY_ZOMBIE_BREAK_DOOR_WOOD"
+    volume: 0.55
+    pitch: 1.4
+
+# Звук при полном разрушении предмета щита в ноль (по прочности)
+shield-destroy-sound:
+  enabled: true
+  sound: "ITEM_SHIELD_BREAK"
+  volume: 2.0
+  pitch: 0.7

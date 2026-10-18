@@ -1,0 +1,32 @@
+permissions:
+  admin: "nexusclans.admin"
+
+clan-settings:
+  # Стоимости операций (списываются с личного баланса игрока Vault, кроме showtag — он требует баланса в казне клана)
+  create-cost: 280000.0
+  rename-cost: 7000000.0
+  showtag-required-clan-balance: 25000.0
+
+  # Ограничения длины названия клана (без учета цветовых кодов &a, &l, &o и т.д.)
+  min-name-length: 3
+  max-name-length: 16
+  # Разрешить цветовые коды (&0-&f), жирный (&l) и курсив (&o) в названии клана
+  allow-colors-and-formatting: true
+
+  # Время действия приглашений и подтверждений (в секундах)
+  invite-expire-seconds: 60
+  remove-confirm-expire-seconds: 30
+  leader-transfer-confirm-expire-seconds: 60
+
+  # Кулдаун на повторную передачу главы клана (5 дней = 432000 секунд)
+  leader-transfer-cooldown-seconds: 432000
+  # Запрет повторно приглашать кикнутого игрока в этот же клан (3 дня = 259200 секунд)
+  kick-reinvite-cooldown-seconds: 259200
+
+  # Сколько записей показывать на одной странице /c log и /c log <ник>
+  log-entries-per-page: 15
+
+placeholders:
+  # Если у клана еще НЕ куплен /c showtag (или игрок без клана) — плейсхолдер тега возвращает пустую строку
+  hidden-tag-value: ""
+  visible-tag-format: "{tag}"

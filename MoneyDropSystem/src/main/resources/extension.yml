@@ -1,0 +1,5 @@
+name: MoneyDropSystem
+main: me.xmpl.moneydrop.MoneyDropExtension
+version: 1.0.0
+authors: [Xmpl]
+depend: [Vault]

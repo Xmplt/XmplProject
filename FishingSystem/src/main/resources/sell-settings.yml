@@ -1,0 +1,17 @@
+# Чем больше денег за одну продажу — тем жестче цвет суммы!
+sell-colors:
+  '0': "&e&l"
+  '500': "&a&l"
+  '1500': "&6&l"
+  '4000': "&c&l"
+  '8000': "&d&l"
+  '15000': "&4&l"
+
+# Тайтл на экране при продаже рыбы (/sellfish)
+title:
+  enabled: true
+  main-title: "{color}+{amount}$"
+  subtitle: "&fПродано рыб: &e{count} шт. &7({total_weight} кг)"
+  fade-in: 5
+  stay: 45
+  fade-out: 10

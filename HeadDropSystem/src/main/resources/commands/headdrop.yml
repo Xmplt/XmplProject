@@ -1,0 +1,11 @@
+messages:
+  no-permission: "&c[HeadDrop] У вас нет прав администратора!"
+  reload-success: "&a[HeadDrop] Все конфиги HeadDropSystem успешно перезагружены!"
+  head-given: "&a[HeadDrop] Вы получили подписанную голову игрока &e{player}&a!"
+  stats-format: "&6[HeadDrop] Игрок &e{player}&6: Выбил голов: &a{collected} &8| &6Потерял голов: &c{lost}"
+
+  help:
+    - "&6&l=== Управление HeadDropSystem ==="
+    - "&e/headdrop give <Ник> &7- Получить подписанную голову игрока со скином"
+    - "&e/headdrop stats [Ник] &7- Посмотреть статистику выбитых голов"
+    - "&e/headdrop reload &7- Перезагрузить все конфиги"

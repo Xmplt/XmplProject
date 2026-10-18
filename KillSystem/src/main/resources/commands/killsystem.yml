@@ -1,0 +1,17 @@
+messages:
+  no-permission: "&c[KillSystem] У вас нет прав!"
+  look-at-sign: "&c[KillSystem] Посмотрите вплотную на табличку, которую хотите сделать топом!"
+  invalid-rank-number: "&c[KillSystem] Укажите корректный номер места (например: /killsystem addtab1 или /killsystem addtab100)!"
+  sign-added: "&a[KillSystem] Табличка для &eТоп-{rank} &aпо убийствам успешно установлена и обновлена!"
+  sign-removed: "&e[KillSystem] Табличка топа (#{rank}) успешно удалена из базы!"
+  not-a-top-sign: "&c[KillSystem] Эта табличка не привязана к топу убийств!"
+  force-updated: "&a[KillSystem] Все таблички топа ({count} шт.) принудительно обновлены!"
+  reload-success: "&a[KillSystem] Конфигурации и таблички KillSystem успешно перезагружены!"
+
+  help-admin:
+    - "&4&l=== Управление KillSystem ==="
+    - "&c/kills [Страница] &7- Посмотреть топ убийц в чате"
+    - "&c/killsystem addtab<Номер> &7- Привязать табличку под взглядом к месту в топе (например addtab1 или addtab100)"
+    - "&c/killsystem removetab &7- Отвязать табличку, на которую вы смотрите"
+    - "&c/killsystem update &7- Принудительно обновить все таблички сейчас"
+    - "&c/killsystem reload &7- Перезагрузить все конфиги"

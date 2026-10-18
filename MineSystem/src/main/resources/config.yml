@@ -1,0 +1,20 @@
+permissions:
+  # Право администратора на /mine addrg, /mine removerg, /mine reload
+  admin: "minesystem.admin"
+  # Право игрока на продажу руды (/mine sell). Если require-sell-permission: false — доступно всем
+  require-sell-permission: false
+  sell: "minesystem.sell"
+
+# Настройки анимации восстановления выкопанной руды:
+# Выкопали -> Красное стекло -> Желтое стекло -> Зеленое стекло -> Исходная руда
+regeneration:
+  # Длительность каждой фазы стекла в тиках (20 тиков = 1 секунда)
+  red-glass-ticks: 40     # 2 секунды горит красным стеклом
+  yellow-glass-ticks: 40  # 2 секунды горит желтым стеклом
+  green-glass-ticks: 40   # 2 секунды горит зеленым стеклом
+
+  # Data-значения цветного стекла (STAINED_GLASS) в версии 1.12.2:
+  # 14 = Красное (Red), 4 = Желтое (Yellow), 5 = Лаймовое/Зеленое (Lime)
+  red-glass-data: 14
+  yellow-glass-data: 4
+  green-glass-data: 5

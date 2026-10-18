@@ -1,0 +1,35 @@
+# Для этой команды требуется отдельный пермишен!
+permission: "funeffects.kaka"
+require-permission: true
+
+mechanics:
+  # Кулдаун на команду 30 секунд
+  cooldown-seconds: 30
+
+  # Случайное количество кусков коричневого бетона за один поход (от 3 до 8 шт., по 1 шт. каждую секунду)
+  min-pieces: 3
+  max-pieces: 8
+  drop-interval-ticks: 20 # 20 тиков = 1 секунда
+
+  # Сколько секунд коричневый бетон лежит на полу до исчезновения
+  stay-on-ground-seconds: 12
+
+  # Кулдаун на сообщение при наступании (в секундах), чтобы один игрок не спамил чат
+  step-message-cooldown-seconds: 2
+
+  # Радиус оповещения и слышимости звука подбора предметов (ENTITY_ITEM_PICKUP)
+  broadcast-radius: 15.0
+  sound: "ENTITY_ITEM_PICKUP"
+  pitch: 0.6
+
+messages:
+  no-permission: "&cУ вас нет прав на использование команды /kaka!"
+  cooldown: "&cВы недавно сходили по-большому! Подождите еще {time} сек."
+  started-self: "&eВы начали какать! Не двигайтесь с места до окончания процесса!"
+  started-nearby: "&eИгрок {player} начал какать!"
+  cancelled-moved: "&cВы сдвинулись с места и процесс прервался!"
+
+  # Сообщения при наступании в коричневый бетон
+  stepped-other-victim: "&eВы наступили в говно игрока {owner}!"
+  stepped-other-owner: "&eИгрок {victim} наступил в ваше говно!"
+  stepped-own: "&eВы наступили в свое же говно!"

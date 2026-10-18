@@ -1,0 +1,17 @@
+particles:
+  enabled: true
+  # CRIT_MAGIC или ITEM_CRACK или SMOKE_LARGE
+  type: "CRIT_MAGIC"
+  count: 25
+  offset-x: 0.35
+  offset-y: 0.45
+  offset-z: 0.35
+  speed: 0.15
+
+notifications:
+  # Показывать ли над хотбаром (ActionBar) уведомление атакующему и жертве
+  actionbar-attacker-enabled: true
+  actionbar-attacker: "&a&l⚔ Вы пробили щит игроку &e&l{victim}&a&l!"
+
+  actionbar-victim-enabled: true
+  actionbar-victim: "&c&l🛡 Ваш щит был пробит игроком &e&l{attacker}&c&l!"

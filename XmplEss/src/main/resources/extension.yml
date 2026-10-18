@@ -1,0 +1,4 @@
+name: XmplEss
+main: me.xmpl.ess.XmplEssExtension
+version: 1.0.0
+authors: [Xmpl]

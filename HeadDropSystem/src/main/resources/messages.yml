@@ -1,0 +1,5 @@
+# В чат ничего не пишется при отрубании головы!
+notify-killer-on-drop: false
+killer-drop-message: ""
+notify-victim-on-drop: false
+victim-drop-message: ""

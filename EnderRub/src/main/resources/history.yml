@@ -1,0 +1,25 @@
+settings:
+  # Сколько записей показывать на одной странице истории (/endrub 1, /endrub 2 и т.д.)
+  entries-per-page: 5
+
+# Форматы типов операций в истории
+types:
+  DEPOSIT: "&a&l+{amount} ₪"
+  WITHDRAW: "&c&l-{amount} ₪"
+  SET: "&e&l={amount} ₪"
+
+# Что выводить при вводе /endrub или /enderrub [страница]
+view:
+  header:
+    - "&8&m--------------------------------------------------"
+    - "&5&l✦ &d&lВАШ БАЛАНС: &f&l{balance_formatted} &d&lЭндер-Рублей &7({balance} {symbol})"
+    - "&7История операций &8(Страница &e{page} &8из &e{max_pages}&8):"
+    - ""
+  entry-format: "&8[&7{date}&8] {type_format} &8| &f{description} &7(От: &e{source}&7)"
+  empty-history: "&7У вас пока нет ни одной операции с Эндер-Рублями."
+  footer:
+    - ""
+    - "&7Следующая страница: &d/endrub {next_page}"
+    - "&8&m--------------------------------------------------"
+  footer-last-page:
+    - "&8&m--------------------------------------------------"

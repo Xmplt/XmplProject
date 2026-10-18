@@ -1,0 +1,44 @@
+permissions:
+  # Команда /airdrop доступна ТОЛЬКО администраторам (у обычных игроков нет никаких команд)
+  admin: "airdropsystem.admin"
+  # Право платной подписки (позволяет за 5 минут до спавна увидеть точные координаты сундука вместо ???, ???, ???)
+  subscription-reveal-coords: "airdropsystem.subscriber.coords"
+
+settings:
+  # Минимальный онлайн для хода таймера спавна. Если игроков меньше — таймер ставится на паузу, но НЕ сбрасывается!
+  min-online-players: 2
+
+  # Тип блока сундука (ENDER_CHEST или CHEST)
+  chest-material: "ENDER_CHEST"
+
+  # Очищать любой старый лор предмета и ставить фирменную подпись сундука
+  replace-item-lore: true
+  custom-item-lore:
+    - "&6Получено из сундука по координатам"
+
+  # Защита от лагов при поиске координат:
+  # Сколько максимум точек проверять за 1 тик (2 точки в тик = 40 точек в секунду вообще без нагрузки на TPS!)
+  search-attempts-per-tick: 2
+  # Максимум попыток на один мир перед автоматической сменой мира
+  max-attempts-per-world: 30
+
+  # Защитный регион 5x5 вокруг сундука (радиус 2 блока во все стороны от центра: 2 + 1 + 2 = 5x5 блоков)
+  protective-region-radius: 5
+  protective-region-height-up: 10
+  protective-region-height-down: 10
+
+timers:
+  spawn-interval-seconds: 3600
+  pre-spawn-warning-seconds: 300
+  waiting-activation-seconds: 600
+  waiting-reminder-interval-seconds: 60
+  unlocking-seconds: 60
+  reloading-between-phases-seconds: 60
+  finished-despawn-seconds: 300
+
+drop-physics:
+  ticks-between-items: 6
+  rise-height-blocks: 6.0
+  rise-up-ticks: 15
+  rise-up-velocity-y: 0.45
+  white-glow-enabled: true

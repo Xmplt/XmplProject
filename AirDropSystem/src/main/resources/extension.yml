@@ -1,0 +1,5 @@
+name: AirDropSystem
+main: me.xmpl.airdrop.AirDropExtension
+version: 1.0.0
+authors: [Xmpl]
+depend: [WorldGuard, WorldEdit]

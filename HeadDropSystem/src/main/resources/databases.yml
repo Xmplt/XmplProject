@@ -1,0 +1,13 @@
+# Включить ли сохранение статистики выбитых голов в БД (SQLITE / MYSQL / GLOBAL)
+enable-stats-database: true
+
+databases:
+  default:
+    type: "SQLITE"
+    sqlite-file: "headdrop_stats.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_headdrop"
+      username: "root"
+      password: "password"

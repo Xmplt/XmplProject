@@ -1,0 +1,7 @@
+enabled: true
+# Цвет полоски: RED, BLUE, GREEN, PINK, PURPLE, WHITE, YELLOW
+color: "RED"
+# Стиль полоски: SOLID (сплошная без разделений), SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+style: "SOLID"
+# Текст над полоской (%time% - оставшиеся секунды, %opponent% - ник противника)
+title: "&c&lРЕЖИМ ПВП &8&l| &f&lДо окончания: &e&l%time% &f&lсек."

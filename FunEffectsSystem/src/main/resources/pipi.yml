@@ -1,0 +1,31 @@
+permission: "funeffects.pipi"
+require-permission: false
+
+mechanics:
+  cooldown-seconds: 25
+
+  # Количество струй желтого бетона за один /pipi (50 штук, вылетают очень часто — каждые 2 тика!)
+  total-pieces: 50
+  drop-interval-ticks: 2
+
+  # Сколько секунд желтый бетон лежит на земле после падения
+  stay-on-ground-seconds: 8
+
+  # Анти-спам кулдаун на сообщения о наступании в мочу (2 секунды)
+  step-message-cooldown-seconds: 2
+
+  # Радиус слышимости звука текущей воды и оповещения игроков рядом
+  broadcast-radius: 15.0
+  sound: "BLOCK_WATER_AMBIENT"
+  pitch: 1.2
+
+messages:
+  no-permission: "&cУ вас нет прав на использование команды /pipi!"
+  cooldown: "&cВы еще не хотите в туалет! Подождите {time} сек."
+  started-self: "&eВы начали писать!"
+  started-nearby: "&eИгрок {player} начал писать!"
+
+  # Сообщения при попадании струи или наступании в желтый бетон
+  stepped-other-victim: "&eВас обоссал игрок {owner}!"
+  stepped-other-owner: "&eВы обоссали игрока {victim}!"
+  stepped-own: "&eВы наступили в свою же мочу!"

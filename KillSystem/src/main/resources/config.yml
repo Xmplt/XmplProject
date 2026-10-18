@@ -1,0 +1,16 @@
+permissions:
+  # Право администратора на /killsystem addtab<N>, removetab, reload
+  admin: "killsystem.admin"
+  # Если false — команды /kills, /killtop, /topkills, /topkill, /killstop доступны всем игрокам
+  require-top-permission: false
+  top-view: "killsystem.view"
+
+settings:
+  # Интервал автоматического обновления всех табличек топа в секундах (300 секунд = 5 минут)
+  sign-update-interval-seconds: 300
+
+  # Засчитывать ли в статистику любые смерти игрока (true) или только смерти от руки другого игрока (false)
+  count-all-deaths: true
+
+  # Защита от накрутки убийств с одного IP
+  prevent-same-ip-boost: true

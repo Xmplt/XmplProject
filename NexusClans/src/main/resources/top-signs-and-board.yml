@@ -1,0 +1,40 @@
+signs-and-hopper:
+  # Обновление табличек и голов в воронке раз в 5 минут (300 секунд)
+  update-interval-seconds: 300
+  hopper-title: "&8Топ-3 клана сервера"
+  # Слоты для 3 голов владельцев кланов в воронке (по центру: 1, 2, 3)
+  hopper-slots: [1, 2, 3]
+
+  active-sign:
+    line-1: "{tag}"
+    line-2: "&0{leader}"
+    line-3: "&0Репутация клана:"
+    line-4: "&0{points}"
+
+  empty-sign:
+    line-1: "&7Пусто #{rank}"
+    line-2: "&0-"
+    line-3: "&0Репутация клана:"
+    line-4: "&00"
+
+  head-item:
+    display-name: "&6&lТоп-#{rank} &f{tag}"
+    lore:
+      - "&7Глава клана: &e{leader}"
+      - "&7Репутация клана: &a&l{points}"
+
+scoreboard:
+  enabled: true
+  update-interval-ticks: 40
+  title: "&6&lТОП 10 КЛАНОВ"
+  header-lines:
+    - "&7Лучшие кланы по очкам:"
+  entry-format: "&e#{rank} &f{tag} &8- &a{points}"
+  empty-entry-format: "&e#{rank} &7Пусто &8- &70"
+  footer-lines:
+    - "&7"
+    - "&6Создай свой: &e/c create"
+
+# Данные установленных табличек и регионов скорборда
+signs: {}
+regions: {}

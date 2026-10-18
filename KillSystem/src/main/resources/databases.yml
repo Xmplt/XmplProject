@@ -1,0 +1,11 @@
+databases:
+  default:
+    # Режимы: SQLITE (по умолчанию), MYSQL или GLOBAL
+    type: "SQLITE"
+    sqlite-file: "kills_database.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_kills"
+      username: "root"
+      password: "password"

@@ -1,0 +1,24 @@
+messages:
+  no-permission: "&c[Рыбалка] У вас нет прав!"
+  no-fish-to-sell: "&c[Рыбалка] &fУ вас в инвентаре нет пойманной рыбы для продажи!"
+
+  # Зеленое сообщение в чат при продаже рыбы
+  sold-chat: "&a&l[Рыбалка] &aВы продали &e&l{count} &aрыб (общий вес: &f{total_weight} кг&a) на сумму {color}+{amount}$&a!"
+
+  # Оповещение, если кто-то выловил ультра-редкого гиганта (TROPHEY_GOD)
+  trophy-caught-chat: "&4&l[ТРОФЕЙ] &fВы выловили гигантскую рыбу: {fish} &fвесом &4&l{weight} кг&f!"
+
+  # Сообщения управления регионами для админов (/fishingsystem)
+  no-worldedit-selection: "&c[Рыбалка] Сначала выделите водоем топориком WorldEdit (//wand)!"
+  region-added: "&a[Рыбалка] Бонусный регион (x2 цена рыбы) &e{region} &aуспешно добавлен!"
+  region-removed: "&e[Рыбалка] Бонусный регион &6{region} &eбыл удален!"
+  region-not-found: "&c[Рыбалка] Регион с названием &e{region} &cне найден!"
+  reload-success: "&a[Рыбалка] Все конфигурации и регионы FishingSystem успешно перезагружены!"
+
+  help-admin:
+    - "&3&l=== Управление FishingSystem ==="
+    - "&b/sellfish &7- Продать всю пойманную рыбу из инвентаря"
+    - "&b/fishingsystem addregion <Название> &7- Добавить регион с ценой рыбы x2"
+    - "&b/fishingsystem removeregion <Название> &7- Удалить бонусный регион"
+    - "&b/fishingsystem listregions &7- Список всех бонусных регионов"
+    - "&b/fishingsystem reload &7- Перезагрузить все конфиги"

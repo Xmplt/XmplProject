@@ -1,0 +1,14 @@
+# Ярко-зеленое сообщение игроку при убийстве моба
+# {mob} - русское имя моба из mobs-rewards.yml, {amount} - полученная сумма
+mob-kill-chat: "&a&lВы убили {mob} и получили {amount}$!"
+
+# Дублировать ли уведомление об убийстве моба над хотбаром (ActionBar)
+mob-kill-actionbar-enabled: false
+mob-kill-actionbar: "&a&l+{amount}$ &7({mob})"
+
+# Сообщения при убийстве игрока в ПвП
+pvp-killer-chat: "&a&lВы убили игрока &e&l{victim} &a&lи получили &2&l{amount}$&a&l!"
+pvp-victim-chat: "&c&lВас убил игрок &e&l{killer}&c&l, вы потеряли &4&l{amount}$&c&l!"
+
+# Если у убитого игрока было 0 денег на счету
+pvp-killer-victim-poor: "&eВы убили игрока &6{victim}&e, но у него не было денег!"

@@ -1,0 +1,11 @@
+databases:
+  default:
+    # Режимы: SQLITE (по умолчанию сохраняется в папке Configs/WoodSystem/), MYSQL или GLOBAL
+    type: "SQLITE"
+    sqlite-file: "wood_storage.db"
+    mysql:
+      host: "127.0.0.1"
+      port: 3306
+      database: "xmpl_wood"
+      username: "root"
+      password: "password"

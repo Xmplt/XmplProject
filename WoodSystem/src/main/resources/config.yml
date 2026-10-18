@@ -1,0 +1,20 @@
+permissions:
+  admin: "woodsystem.admin"
+  require-sell-permission: false
+  sell: "woodsystem.sell"
+
+chopping:
+  max-trees-limit: 250
+  min-hits-required: 4
+  max-hits-required: 6
+  sapling-respawn-seconds: 10
+
+  # Сообщение в ЧАТ при каждом ударе по нижнему блоку дерева (белый текст + жирная оранжевая цифра)
+  send-hit-progress-chat: true
+  hit-progress-chat: "&fОсталось срубить: &6&l{remaining}"
+
+  show-hit-progress-actionbar: false
+  hit-progress-actionbar: "&fОсталось срубить: &6&l{remaining}"
+
+  hit-sound: "BLOCK_WOOD_HIT"
+  fell-sound: "BLOCK_WOOD_BREAK"

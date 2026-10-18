@@ -1,0 +1,4 @@
+name: FunEffectsSystem
+main: me.xmpl.funeffects.FunEffectsExtension
+version: 1.0.0
+authors: [Xmpl]

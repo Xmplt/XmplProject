@@ -1,0 +1,24 @@
+permissions:
+  admin: "topka.admin"
+  # Право будущей платной подписки (в стадии наполнения сундука пишет в ЛС, в каком именно сундуке появятся ресурсы)
+  subscriber-notify: "topka.subscriber.notify"
+
+settings:
+  min-online-players: 2
+  cooldown-seconds: 3600
+  restock-timer-seconds: 900
+  min-filling-seconds: 15
+  max-filling-seconds: 20
+
+  # Сбрасывать весь старый лор каждого предмета в пуле и ставить эту строку:
+  replace-item-lore: true
+  custom-item-lore:
+    - "&fВещь &e&lTOPKA"
+
+clan-integration:
+  # Количество клановых очков первому игроку, забравшему предмет из сундука Топки
+  points-for-first-item: 5
+
+subscriber-messages:
+  single-chest-filling: "&6[Подписка] &fНачалось наполнение сундука &e&lTOPKA &fна координатах &e{x}, {y}, {z}&f!"
+  two-chests-filling: "&6[Подписка] &fРесурсы появятся в &e&lСундуке TOPKA #{number} &7(&f{x}, {y}, {z}&7)!"

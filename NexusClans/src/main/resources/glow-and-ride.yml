@@ -1,0 +1,13 @@
+glowing:
+  # Интервал автоматического обновления пакетного свечения (в тиках, 40 тиков = 2 сек)
+  refresh-interval-ticks: 40
+  # Цвета свечения (GREEN = зеленый для соклановцев, YELLOW = желтый для союзников)
+  clanmate-color: "GREEN"
+  ally-color: "YELLOW"
+
+head-riding:
+  # Параметры броска игрока с головы при нажатии Shift + ПКМ
+  throw-horizontal-speed: 1.45
+  throw-vertical-boost: 0.55
+  throw-sound: "ENTITY_SNOWBALL_THROW"
+  mount-sound: "ENTITY_HORSE_SADDLE"

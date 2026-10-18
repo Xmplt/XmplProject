@@ -1,0 +1,5 @@
+name: Topka
+main: me.xmpl.topka.TopkaExtension
+version: 1.0.0
+authors: [Xmpl]
+depend: [WorldEdit]

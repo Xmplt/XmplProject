@@ -1,0 +1,8 @@
+# Доступные плейсхолдеры PlaceholderAPI:
+# %xmpl_enderrub_balance%           -> Чистое целое число (например: 1500)
+# %xmpl_enderrub_balance_formatted% -> С разделителем тысяч (например: 1 500)
+# %xmpl_enderrub_tab%               -> Красивый формат специально для TAB (настраивается ниже)
+# %xmpl_enderrub_symbol%            -> Символ валюты
+
+tab-format: "&d&l{balance_formatted} &5&l{symbol}"
+zero-balance-tab-format: "&70 &8{symbol}"

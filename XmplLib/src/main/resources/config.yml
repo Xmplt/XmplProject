@@ -1,0 +1,17 @@
+# Режим работы баз данных для всех дополнений:
+# GLOBAL_MYSQL  - Все дополнения принудительно используют одну общую базу MySQL, указанную ниже.
+# GLOBAL_SQLITE - Все дополнения используют один общий файл storage.db в папке XmplLib.
+# HYBRID        - Каждое дополнение само решает в своем config.yml (в папке Configs/<Имя>/),
+#                 какую БД ему использовать (глобальную, свой личный SQLite или свой MySQL).
+database-mode: HYBRID
+
+global-mysql:
+  host: "127.0.0.1"
+  port: 3306
+  database: "xmpl_global"
+  username: "root"
+  password: "password"
+  pool-size: 10
+
+# Список дополнений, которые были отключены администратором через /xmpllib disable <Модуль>
+disabled-extensions: []

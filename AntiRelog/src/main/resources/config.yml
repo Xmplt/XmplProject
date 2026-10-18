@@ -1,0 +1,19 @@
+pvp:
+  # Длительность ПвП режима в секундах
+  duration-seconds: 15
+  # Убивать ли игрока при выходе с сервера во время ПвП
+  kill-on-quit: true
+  # Выключать ли креатив, полет (fly) и режим бога при входе в ПвП
+  disable-fly-and-gamemode: true
+  # Учитывать ли выстрелы из лука, снежки, яйца и зелья от игроков
+  tag-on-projectiles: true
+
+permissions:
+  # Право, которое полностью обходит вход в ПвП режим (игрок не получает тег)
+  bypass-pvp-tag: "antirelog.bypass.tag"
+  # Право, которое позволяет вводить любые команды в ПвП режиме
+  bypass-commands: "antirelog.bypass.commands"
+  # Право, которое спасает от наказания при выходе из игры в ПвП
+  bypass-quit-punish: "antirelog.bypass.quit"
+  # Право администратора на управление дополнением (/antirelog)
+  admin: "antirelog.admin"

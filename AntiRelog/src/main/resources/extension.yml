@@ -1,0 +1,4 @@
+name: AntiRelog
+main: me.xmpl.antirelog.AntiRelogExtension
+version: 1.0.0
+authors: [Xmpl]

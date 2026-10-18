@@ -1,0 +1,8 @@
+permission: "enderrub.use"
+# Если require-permission: false, смотреть свой баланс и историю (/endrub) может любой игрок без прав
+require-permission: false
+
+messages:
+  no-permission: "&cУ вас нет прав на просмотр баланса Эндер-Рублей!"
+  invalid-page: "&cСтраница &e{page} &cне существует! Доступно страниц: &e{max_pages}&c."
+  transfer-forbidden: "&c[!] Эндер-Рубли — это персональная донат-валюта! Передача другим игрокам запрещена."

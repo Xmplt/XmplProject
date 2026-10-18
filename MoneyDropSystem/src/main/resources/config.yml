@@ -1,0 +1,22 @@
+settings:
+  # Включить ли выдачу денег за убийство мобов и животных
+  enable-mob-rewards: true
+  # Включить ли кражу денег (5%) при убийстве игроков в ПвП
+  enable-pvp-steal: true
+  # Округлять ли суммы до целых чисел (например 42 вместо 42.35)
+  round-to-integer: true
+
+  # Список миров, где система НЕ работает (оставь пустым, если работает везде)
+  disabled-worlds: []
+
+permissions:
+  # Право администратора на управление (/moneydrop)
+  admin: "moneydrop.admin"
+  # Если у игрока есть эти права, его награда за мобов умножается (опционально)
+  multipliers:
+    vip:
+      permission: "moneydrop.multiplier.vip"
+      multiplier: 1.25
+    premium:
+      permission: "moneydrop.multiplier.premium"
+      multiplier: 1.5

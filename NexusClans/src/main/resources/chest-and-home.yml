@@ -1,0 +1,10 @@
+virtual-chest:
+  # Размер виртуального сундука клана (54 = двойной сундук)
+  size: 54
+  title: "&8Сундук клана: &0{clan}"
+  # Дополнительная строка в конец лора предмета (не заменяет родной лор предмета, удаляется при взятии!)
+  depositor-lore-prefix: "&8▪ &7Положил в сундук: &e"
+
+clan-home:
+  # Блокировать ли /c home и /c tp и /c teamtp в режиме ПвП AntiRelog
+  block-teleports-in-antirelog-pvp: true

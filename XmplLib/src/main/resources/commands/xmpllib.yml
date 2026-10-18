@@ -1,0 +1,13 @@
+# Конфигурация команды /xmpllib
+permission: "xmpllib.admin"
+
+help-message:
+  - "&6&l=== Управление ядром XmplLib ==="
+  - "&e/xmpllib list &7- Список всех дополнений и их статус"
+  - "&e/xmpllib enable <Модуль> &7- Включить дополнение на лету"
+  - "&e/xmpllib disable <Модуль> &7- Отключить дополнение на лету"
+  - "&e/xmpllib reload &7- Перезагрузить все конфиги и дополнения"
+
+list-header: "&6=== Дополнения XmplLib (%total%) ==="
+list-format-enabled: "&8- &a%name% &7v%version% &8[&aВКЛЮЧЕН&8]"
+list-format-disabled: "&8- &c%name% &7v%version% &8[&cОТКЛЮЧЕН&8]"

@@ -1,0 +1,19 @@
+portals:
+  AD:
+    # Отображаемое имя для подстановки в сообщения "(портал)"
+    display-name: "в Ад"
+    # Стоимость телепортации в долларах Vault
+    cost: 500.0
+    # Требовать ли отдельное право на /ad (по умолчанию false — доступно всем)
+    require-permission: false
+    permission: "adender.use.ad"
+    sound: "BLOCK_PORTAL_TRAVEL"
+    particle: "FLAME"
+
+  ENDER:
+    display-name: "в Энд"
+    cost: 500.0
+    require-permission: false
+    permission: "adender.use.ender"
+    sound: "ENTITY_ENDERMEN_TELEPORT"
+    particle: "PORTAL"

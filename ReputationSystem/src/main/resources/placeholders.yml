@@ -1,0 +1,20 @@
+# Доступные плейсхолдеры PlaceholderAPI:
+# %xmpl_reputationsystem_badge%     -> Серые скобочки и жирный зеленый/красный знак с числом: &7(&a&l+15&7) или &7(&c&l-5&7)
+# %xmpl_reputationsystem_colored%   -> Без скобочек, только жирный цвет и знак: &a&l+15 или &c&l-5
+# %xmpl_reputationsystem_amount%    -> Чистое число репутации: 15, 0 или -5
+# %xmpl_reputationsystem_cooldown%  -> Оставшийся кулдаун голосования в минутах
+
+badge-format:
+  # Если репутация больше 0 (Ярко-зеленый жирный + и количество в серых скобках)
+  positive: "&7(&a&l+%amount%&7)"
+
+  # Если репутация равна 0
+  zero: "&7(&f+0&7)"
+
+  # Если репутация меньше 0 (Ярко-красный жирный - и количество в серых скобках, %abs_amount% — модуль числа без второго минуса)
+  negative: "&7(&c&l-%abs_amount%&7)"
+
+colored-only-format:
+  positive: "&a&l+%amount%"
+  zero: "&f+0"
+  negative: "&c&l-%abs_amount%"

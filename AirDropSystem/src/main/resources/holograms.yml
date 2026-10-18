@@ -1,0 +1,19 @@
+enabled: true
+height-offset: 1.35
+
+holograms:
+  waiting:
+    - "&a&lСУНДУК ПО КООРДИНАТАМ"
+    - "&aНажми ПКМ для активации"
+    - "&cНе активирован"
+  unlocking:
+    - "&a&lАКТИВИРОВАН"
+    - "&aОткрытие через: &a{time}"
+  reloading:
+    - "&a&lПЕРЕЗАРЯДКА{dots}"
+    - "&aСледующий дроп через: &a{time}"
+  dropping:
+    - "&a&lВЫПАДЕНИЕ{dots}"
+  finished:
+    - "&c&lСУНДУК ЗАЛУТАЛИ"
+    - "&cИсчезновение: &f{time}"

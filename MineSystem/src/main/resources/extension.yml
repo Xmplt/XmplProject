@@ -1,0 +1,5 @@
+name: MineSystem
+main: me.xmpl.mine.MineSystemExtension
+version: 1.0.0
+authors: [Xmpl]
+depend: [WorldEdit, Vault]

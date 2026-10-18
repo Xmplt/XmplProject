@@ -1,0 +1,12 @@
+settings:
+  only-pvp-kills: true
+  base-drop-chance: 100.0
+  looting-bonus-per-level: 0.0
+  # Выключено по умолчанию, чтобы можно было тестировать с двух аккаунтов на одном ПК
+  prevent-same-ip-farm: false
+  preserve-name-on-block-break: true
+
+permissions:
+  admin: "headdrop.admin"
+  enable-keep-head-permission: false
+  keep-head: "headdrop.keep"

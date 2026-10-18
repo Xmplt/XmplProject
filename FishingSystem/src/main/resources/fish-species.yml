@@ -1,0 +1,35 @@
+# Настройки каждого вида рыбы:
+# data - подтип RAW_FISH в 1.12.2 (0 = Обычная рыба/Треска, 1 = Лосось, 2 = Рыба-клоун, 3 = Иглобрюх)
+# display-name - название предмета рыбы
+# min-weight - минимальный возможный вес (в кг)
+# max-weight - максимальный предел веса для ЭТОГО вида рыбы (в кг)
+# price-per-kg - базовая цена за 1 килограмм ЭТОГО вида рыбы
+
+species:
+  COD:
+    data: 0
+    display-name: "&fСырая треска"
+    min-weight: 0.2
+    max-weight: 16.0
+    price-per-kg: 90.0
+
+  SALMON:
+    data: 1
+    display-name: "&fСырой лосось"
+    min-weight: 0.5
+    max-weight: 28.0
+    price-per-kg: 120.0
+
+  CLOWNFISH:
+    data: 2
+    display-name: "&6Тропическая рыба-клоун"
+    min-weight: 0.1
+    max-weight: 4.5
+    price-per-kg: 450.0
+
+  PUFFERFISH:
+    data: 3
+    display-name: "&eИглобрюх"
+    min-weight: 0.2
+    max-weight: 9.0
+    price-per-kg: 260.0

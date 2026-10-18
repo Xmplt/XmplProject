@@ -1,0 +1,105 @@
+# Список миров, в которых может появляться сундук
+enabled-worlds:
+  - "world"
+  - "world_nether"
+  - "world_the_end"
+
+worlds:
+  # 1. ОБЫЧНЫЙ МИР (Поверхность, без воды/лавы/пещер/деревьев/чужих регионов)
+  world:
+    display-name: "&aОбычный мир"
+    coordinates:
+      min-x: -2000
+      max-x: 2500
+      min-z: -2000
+      max-z: 2500
+      # Радиус от (0, 0), в котором сундук НЕ спавнится ни в коем случае (например зона вокруг спавна)
+      forbidden-center-radius: 1500
+    allowed-restrictions:
+      elytra: true
+      pearl: true
+      chorus: true
+    # Настройки разлета предметов (чтобы улетали примерно на 15-28 блоков от сундука)
+    drop-throw:
+      min-distance-blocks: 15.0
+      max-distance-blocks: 26.0
+      arc-vertical-boost: 0.48
+    # Настройка рандомизации количества фаз (выбирается случайно от phases-min до максимальной прописанной фазы)
+    phases-min: 3
+    phases:
+      1:
+        min: 2
+        max: 4
+      2:
+        min: 3
+        max: 4
+      3:
+        min: 3
+        max: 5
+      4:
+        min: 3
+        max: 5
+
+  # 2. АД (Ровная площадка, не в лаве и не у самого края обрыва над лавой)
+  world_nether:
+    display-name: "&cАд"
+    coordinates:
+      min-x: -1500
+      max-x: 2000
+      min-z: -1500
+      max-z: 2500
+      forbidden-center-radius: 850
+    allowed-restrictions:
+      elytra: true
+      pearl: true
+      chorus: true
+    drop-throw:
+      min-distance-blocks: 14.0
+      max-distance-blocks: 22.0
+      arc-vertical-boost: 0.42
+    phases-min: 3
+    phases:
+      1:
+        min: 2
+        max: 4
+      2:
+        min: 3
+        max: 5
+      3:
+        min: 4
+        max: 5
+      4:
+        min: 4
+        max: 5
+
+  # 3. ЭНД (Ближе к центру острова, подальше от края пропасти в Бездну!)
+  world_the_end:
+    display-name: "&eЭндер мир"
+    coordinates:
+      min-x: -1400
+      max-x: 2520
+      min-z: -1300
+      max-z: 2540
+      forbidden-center-radius: 1000
+    allowed-restrictions:
+      elytra: true
+      pearl: true
+      chorus: true
+    drop-throw:
+      min-distance-blocks: 15.0
+      max-distance-blocks: 25.0
+      arc-vertical-boost: 0.45
+    phases-min: 3
+    phases:
+      1:
+        min: 3
+        max: 5
+      2:
+        min: 3
+        max: 5
+      3:
+        min: 4
+        max: 6
+      4:
+        min: 4
+        max: 5
